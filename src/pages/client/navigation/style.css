@@ -1,0 +1,6 @@
+.container {
+    width: 173px;
+    border-radius: 4px;
+    background-color: #fbfbfb;
+    flex-shrink: 0;
+}
