@@ -1,0 +1,13 @@
+.container {
+    font-size: 12px;
+    font-weight: bold;
+    color: #797979;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    padding: 20px 16px 18px;
+}
+
+.container:hover {
+    color: #007aff;
+    border-color: #007aff;
+}

@@ -1,0 +1,15 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    flex-shrink: 0;
+    padding: 16px 14px;
+}
+
+.body {
+    flex-grow: 1;
+    height: 1px;
+}

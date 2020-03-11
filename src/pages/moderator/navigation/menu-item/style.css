@@ -1,0 +1,13 @@
+.container {
+    color: #3c3c3c;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 7px 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 8px;
+}
+
+.container:hover {
+    background-color: #007aff;
+}
