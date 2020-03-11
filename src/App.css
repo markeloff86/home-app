@@ -2,6 +2,9 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-image: url("./theme/background.jpg");
+    background-size: 242px;
+    font-family: 'Open Sans';
 }
 
 .header {
