@@ -1,0 +1,69 @@
+.container {
+    padding-bottom: 12px;
+    background: #fff;
+}
+
+.header {
+    padding-left: 64px;
+    padding-right: 64px;
+    border: solid 1px rgba(125, 139, 141, 0.15);
+}
+
+.goListLink {
+    margin: 14px 0;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    text-decoration: unset;
+}
+
+.content {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.title {
+    margin-top: 82px;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    color: #000;
+}
+
+.nameField,
+.surnameField {
+    width: 320px;
+}
+
+.fieldsSection {
+    margin-top: 24px;
+}
+
+.hasBorder {
+    padding-top: 24px;
+    border-top: solid 1px rgba(125, 139, 141, 0.15);
+    margin-top: 32px;
+    width: 320px;
+}
+
+.inlineFields {
+    display: flex;
+    align-items: center;
+}
+
+.inlineFields > div:not(:first-child) {
+    margin-left: 8px;
+}
+
+.growField {
+    flex-grow: 1;
+}
+
+.actions {
+    margin-top: 134px;
+}
