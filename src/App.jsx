@@ -3,9 +3,9 @@ import {Provider} from 'react-redux'
 import {createStore, combineReducers} from 'redux'
 import {reducer as formReducer} from 'redux-form'
 
-import logo from './theme/logo.svg';
+import logo from './theme/logo.png';
 import styles from './App.css';
-import { ClientPage, ModeratorPage, ModeratorLoginForm, AddContactForm } from './pages'
+import { ClientPage, ModeratorPage, ModeratorLoginForm, AddContactForm, ResidentsList } from './pages'
 
 const reducers = {form: formReducer}
 const reducer = combineReducers(reducers)
@@ -22,9 +22,10 @@ function App() {
             }
             <body className={styles.body}>
             { false && <ModeratorLoginForm /> }
-            { true && <AddContactForm /> }
+            { false && <AddContactForm /> }
             { false && <ModeratorPage /> }
             { false &&  <ClientPage /> }
+            { true && <ResidentsList /> }
             </body>
         </div>
     </Provider>
