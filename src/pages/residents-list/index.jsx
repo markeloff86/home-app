@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import classNames from 'classnames'
+import { connect } from 'react-redux'
+import { compose } from 'redux'
 
 import logo from '../../theme/logo.png'
-import { Menu, Content } from './components'
+import { fetchGetBuilding } from '../../__data__/actions'
 
+import { Menu, Content } from './components'
 import style from './style.css'
 
-function Component() {
+function Component(props) {
+    useEffect(() => {
+        console.log('props', props)
+        props.getBuilding('1')
+    })
+
     return (
         <div className={style.container}>
             <header className={style.header}>
@@ -20,4 +28,16 @@ function Component() {
     )
 }
 
-export default Component
+export function mapDispatchToProps() {
+    return {
+        getBuilding: buildingId => fetchGetBuilding(buildingId),
+    }
+}
+
+const withConnect = connect(
+    null,
+    mapDispatchToProps,
+);
+
+export default compose(withConnect)(Component)
+

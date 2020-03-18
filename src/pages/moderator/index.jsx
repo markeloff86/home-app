@@ -1,36 +1,25 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-import { News } from './components'
+import { ModeratorLoginForm, AddContactForm, ResidentsList } from '../'
 
-import style from './style.css'
-import { default as Navigation } from './navigation'
-import { default as Content } from './content'
 
 function Component() {
     return (
-        <div className={style.container}>
-            <Navigation />
-            <Router>
-                <div>
-                    <Switch>
-                        <Route path="/news" exact>
-                            <News />
-                        </Route>
-                        <Route path="/communication" exact>
-                            <Content />
-                        </Route>
-                        <Route path="/services" exact>
-                            <Content />
-                        </Route>
-                        <Route path="/around" exact>
-                            <Content />
-                        </Route>
-                    </Switch>
-                </div>
-            </Router>
-        </div>
+        <Router>
+            <Switch>
+                <Route path="/login" exact>
+                    <ModeratorLoginForm />
+                </Route>
+                <Route path="/add-contact" exact>
+                    <AddContactForm />
+                </Route>
+                <Route path="/residents-list" exact>
+                    <ResidentsList />
+                </Route>
+            </Switch>
+        </Router>
     )
 }
 
-export default Component;
+export default Component
