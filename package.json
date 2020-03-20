@@ -1,6 +1,7 @@
 {
   "name": "home-app",
   "version": "0.1.0",
+  "description": "Web UI Home app",
   "private": true,
   "dependencies": {
     "@babel/core": "7.8.4",
@@ -60,6 +61,7 @@
     "react-websocket": "^2.1.0",
     "redux": "^4.0.5",
     "redux-form": "^8.3.1",
+    "redux-thunk": "^2.3.0",
     "resolve": "1.15.0",
     "resolve-url-loader": "3.1.1",
     "sass-loader": "8.0.2",

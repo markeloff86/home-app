@@ -4,15 +4,14 @@ import { connect } from 'react-redux'
 import { compose } from 'redux'
 
 import logo from '../../theme/logo.png'
-import { fetchGetBuilding } from '../../__data__/actions'
+import { getResidentsList } from '../../__data__/actions'
 
 import { Menu, Content } from './components'
 import style from './style.css'
 
 function Component(props) {
     useEffect(() => {
-        console.log('props', props)
-        props.getBuilding('1')
+        props.getResidentsList('1')
     })
 
     return (
@@ -28,10 +27,8 @@ function Component(props) {
     )
 }
 
-export function mapDispatchToProps() {
-    return {
-        getBuilding: buildingId => fetchGetBuilding(buildingId),
-    }
+const mapDispatchToProps = {
+    getResidentsList,
 }
 
 const withConnect = connect(
