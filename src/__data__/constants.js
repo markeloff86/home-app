@@ -1,0 +1,1 @@
+export const MODERATOR_STORAGE_NAME = 'home-moderator'

@@ -1,12 +1,15 @@
 import axios from 'axios'
 
+import { MODERATOR_STORAGE_NAME } from './constants'
+import { getToken } from './utils'
+
 import * as types from './actions-types'
 
 export const fetchGetBuilding = (buildingId) => {
   return axios({
     method: 'GET',
     headers: {
-      'authorization': 'Token a7e82a37096fed9de8567be2cc44be3c8d28361f',
+      'authorization': `Token ${getToken(MODERATOR_STORAGE_NAME)}`,
       'Content-Type': 'application/json',
     },
     url: `http://89.223.30.70:8000/api/residents?building_id=${buildingId}`,

@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import _ from 'lodash'
 
+import { MODERATOR_STORAGE_NAME } from '../../__data__/constants'
+
 import logo from './logo.svg'
 import style from './style.css'
-
-const STORAGE_NAME = 'home-moderator-login'
 
 function Component() {
     const [username, setName] = useState('test_employee')
@@ -25,7 +25,7 @@ function Component() {
         axios.post('http://89.223.30.70:8000/api/auth', {username, password})
             .then((response) => {
                 const token = _.get(response, ['data', 'token'] )
-                localStorage.setItem(STORAGE_NAME, token)
+                localStorage.setItem(MODERATOR_STORAGE_NAME, token)
                 window.location.href = '/residents-list'
             })
             .catch((error) => {
