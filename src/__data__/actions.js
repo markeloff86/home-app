@@ -5,12 +5,20 @@ import { getToken } from './utils'
 
 import * as types from './actions-types'
 
-export const fetchgetResidentsList = () => ({ type: types.GET_RESIDENTS_LIST })
-export const fetchgetResidentsListSuccess = (data) => ({ type: types.GET_RESIDENTS_LIST_SUCCESS, data })
-export const fetchgetResidentsListFail = (error) => ({ type: types.GET_RESIDENTS_LIST_FAIL, error })
+export const fetchGetResidentsList = () => ({ type: types.GET_RESIDENTS_LIST })
+export const fetchGetResidentsListSuccess = (data) => ({ type: types.GET_RESIDENTS_LIST_SUCCESS, data })
+export const fetchGetResidentsListFail = (error) => ({ type: types.GET_RESIDENTS_LIST_FAIL, error })
 
-export const getResidentsList = buildingId => dispatch => {
-    dispatch(fetchgetResidentsList())
+export const fetchGetBuildingsList = () => ({ type: types.GET_BUILDINGS_LIST })
+export const fetchGetBuildingsListSuccess = (data) => ({ type: types.GET_BUILDINGS_LIST_SUCCESS, data })
+export const fetchGetBuildingsListFail = (error) => ({ type: types.GET_BUILDINGS_LIST_FAIL, error })
+
+export const fetchGetBuilding = () => ({ type: types.GET_BUILDING })
+export const fetchGetBuildingSuccess = (data) => ({ type: types.GET_BUILDING_SUCCESS, data })
+export const fetchGetBuildingFail = (error) => ({ type: types.GET_BUILDING_FAIL, error })
+
+export const getResidentsList = buildingsId => dispatch => {
+    dispatch(fetchGetResidentsList())
 
     return axios({
         method: 'GET',
@@ -18,44 +26,50 @@ export const getResidentsList = buildingId => dispatch => {
             'authorization': `Token ${getToken(MODERATOR_STORAGE_NAME)}`,
             'Content-Type': 'application/json',
         },
-        url: `http://89.223.30.70:8000/api/residents?building_id=${buildingId}`,
+        url: `http://89.223.30.70:8000/api/residents?buildings_id=${buildingsId}`,
     })
         .then(response => {
-            dispatch(fetchgetResidentsListSuccess(response.data))
+            dispatch(fetchGetResidentsListSuccess(response.data))
         })
         .catch(error => {
-            dispatch(fetchgetResidentsListFail(error))
+            dispatch(fetchGetResidentsListFail(error))
         })
 }
-// export const fetchgetResidentsList = buildingId => {
-//     return {
-//         type: types.GET_RESIDENTS_LIST,
-//         buildingId,
-//     }
 
-    // return axios({
-    //     method: 'GET',
-    //     headers: {
-    //         'authorization': `Token ${getToken(MODERATOR_STORAGE_NAME)}`,
-    //         'Content-Type': 'application/json',
-    //     },
-    //     url: `http://89.223.30.70:8000/api/residents?building_id=${buildingId}`,
-    // })
-    //     .then(response => {
-    //         console.log('response', response)
-    //     })
-    //     .catch(err => {
-    //         console.log('err', err)
-    //     })
-// }
+export const getBuildingsList = token => dispatch => {
+    dispatch(fetchGetBuildingsList())
 
-// Получить здание
+    return axios({
+        method: 'GET',
+        headers: {
+            'authorization': `Token ${token}`,
+            'Content-Type': 'application/json',
+        },
+        url: `http://89.223.30.70:8000/api/buildings`,
+    })
+        .then(response => {
+            dispatch(fetchGetBuildingsListSuccess(response.data))
+        })
+        .catch(error => {
+            dispatch(fetchGetBuildingsListFail(error))
+        })
+}
 
-// return axios({
-//   method: 'GET',
-//   headers: {
-//     'authorization': 'Token a7e82a37096fed9de8567be2cc44be3c8d28361f',
-//     'Content-Type': 'application/json',
-//   },
-//   url: 'http://89.223.30.70:8000/api/buildings/1',
-// })
+export const getBuilding = id => dispatch => {
+    dispatch(fetchGetBuildingsList())
+
+    return axios({
+        method: 'GET',
+        headers: {
+            'authorization': `Token ${getToken(MODERATOR_STORAGE_NAME)}`,
+            'Content-Type': 'application/json',
+        },
+        url: `http://89.223.30.70:8000/api/buildings/${id}`,
+    })
+        .then(response => {
+            dispatch(fetchGetBuildingSuccess(response.data))
+        })
+        .catch(error => {
+            dispatch(fetchGetBuildingFail(error))
+        })
+}

@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}
+
+.field > div:nth-child(2) {
+    box-shadow: none;
+    border: solid 2px #000;
+}
+
+.field > div:first-child {
+    border: solid 1px #777a82;
+}
+
+.field > div:first-child,
+.field > div:nth-child(2) {
+    border-radius: 2px;
+    font-size: 14px;
+    height: 32px;
+    min-height: 32px;
+    flex-wrap: unset;
+    box-sizing: border-box;
+}
+
+.label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #777a82;
+    margin-bottom: 3px;
+}
+
+.size-lg > div:first-child,
+.size-lg > div:nth-child(2) {
+    width: 320px;
+}
+
+.size-md > div:first-child,
+.size-md > div:nth-child(2) {
+    width: 248px;
+}
+
+.size-sm > div:first-child,
+.size-sm > div:nth-child(2) {
+    width: 76px;
+}
+
+.size-xs > div:first-child,
+.size-xs > div:nth-child(2) {
+    width: 64px;
+}

@@ -1,17 +1,31 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { connect } from 'react-redux'
+import { compose } from 'redux'
+import { createStructuredSelector } from 'reselect'
 import {Field, reduxForm} from 'redux-form'
 import classNames from 'classnames'
+import _ from 'lodash'
 
-import { TextInput, SelectInput, PhoneInput, Action } from './components'
+import { getBuildingsList } from '../../__data__/actions'
+import { MODERATOR_STORAGE_NAME } from '../../__data__/constants'
+import { getToken } from '../../__data__/utils'
+
+import { TextInput, SelectInput, HomeSelectInput, PhoneInput, Action } from './components'
 import style from './style.css'
+import { makeBuildingsList, makeBuildingPorches, makeBuildingPipes, makeBuildingFloorCount } from "../../__data__/selectors"
 
-const homeOptions = [
-    { value: 'chocolate', label: 'Chocolate' },
-    { value: 'strawberry', label: 'Strawberry' },
-    { value: 'vanilla', label: 'Vanilla' },
-];
+function Component(props) {
+    const token = getToken(MODERATOR_STORAGE_NAME)
 
-function Component() {
+    useEffect(() => {
+        props.getBuildingsList(token)
+    }, [token])
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        console.log('handleSubmit', e)
+    }
+
     return (
         <div className={style.container}>
             <header className={style.header}>
@@ -19,7 +33,7 @@ function Component() {
             </header>
             <div className={style.content}>
                 <h1 className={style.title}>Введите информацию о жильце</h1>
-                <form onSubmit={()=>{console.log('submit')}}>
+                <form onSubmit={handleSubmit}>
                     <div className={style.fieldsSection}>
                         <Field
                             name="name"
@@ -27,6 +41,7 @@ function Component() {
                             type="text"
                             label="Имя"
                             size="lg"
+                            required
                         />
                     </div>
                     <div className={style.fieldsSection}>
@@ -36,16 +51,18 @@ function Component() {
                             type="text"
                             label="Фамилия"
                             size="lg"
+                            required
                         />
                     </div>
                     <div className={classNames(style.fieldsSection, style.hasBorder, style.inlineFields)}>
                         <Field
                             name="homeNumber"
-                            component={SelectInput}
+                            component={HomeSelectInput}
                             label="Дом"
-                            options={homeOptions}
+                            options={props.buildingsList}
                             size="md"
                             placeholder="⛪️"
+                            required
                         />
                         <Field
                             name="flatNumber"
@@ -53,33 +70,42 @@ function Component() {
                             type="text"
                             label="Квартира"
                             size="xs"
+                            required
                         />
                     </div>
-                    <div className={classNames(style.fieldsSection, style.hasBorder, style.inlineFields)}>
-                        <Field
-                            name="entranceNumber"
-                            component={TextInput}
-                            type="text"
-                            label="Подъезд"
-                            size="sm"
-                        />
-                        <div className={style.growField}>
-                            <Field
-                                name="floorNumber"
-                                component={TextInput}
-                                type="text"
-                                label="Этаж"
-                                size="sm"
-                            />
-                        </div>
-                        <Field
-                            name="riserNumber"
-                            component={TextInput}
-                            type="text"
-                            label="Стояк"
-                            size="xs"
-                        />
-                    </div>
+                    {/*{ !_.isEmpty(props.buildingPorches) &&*/}
+                        {/*<div className={classNames(style.fieldsSection, style.hasBorder, style.inlineFields)}>*/}
+                            {/*<Field*/}
+                                {/*name="entranceNumber"*/}
+                                {/*component={SelectInput}*/}
+                                {/*options={props.buildingPorches}*/}
+                                {/*type="text"*/}
+                                {/*label="Подъезд"*/}
+                                {/*size="sm"*/}
+                                {/*required*/}
+                            {/*/>*/}
+                            {/*<div className={style.growField}>*/}
+                                {/*<Field*/}
+                                    {/*name="floorNumber"*/}
+                                    {/*component={SelectInput}*/}
+                                    {/*options={props.buildingFloorCount}*/}
+                                    {/*type="text"*/}
+                                    {/*label="Этаж"*/}
+                                    {/*size="sm"*/}
+                                    {/*required*/}
+                                {/*/>*/}
+                            {/*</div>*/}
+                            {/*<Field*/}
+                                {/*name="riserNumber"*/}
+                                {/*component={SelectInput}*/}
+                                {/*options={props.buildingPipes}*/}
+                                {/*type="text"*/}
+                                {/*label="Стояк"*/}
+                                {/*size="xs"*/}
+                                {/*required*/}
+                            {/*/>*/}
+                        {/*</div>*/}
+                    {/*}*/}
                     <div className={classNames(style.fieldsSection, style.hasBorder)}>
                         <Field
                             name="phoneNumber"
@@ -109,8 +135,24 @@ function Component() {
     )
 }
 
+const mapStateToProps = createStructuredSelector({
+    buildingsList: makeBuildingsList(),
+    buildingPorches: makeBuildingPorches(),
+    buildingPipes: makeBuildingPipes(),
+    buildingFloorCount: makeBuildingFloorCount(),
+})
+
+const mapDispatchToProps = {
+    getBuildingsList,
+}
+
+const withConnect = connect(
+    mapStateToProps,
+    mapDispatchToProps,
+)
+
 Component = reduxForm ({
     form: 'AddContactForm',
 }) (Component)
 
-export default Component
+export default compose(withConnect)(Component)

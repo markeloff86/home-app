@@ -20,7 +20,6 @@ function Component(props) {
                 countries={['RU']}
                 international={false}
                 showCountrySelect={false}
-                required
                 onChange={handleChange}
             />
             <label className={style.label}>{props.label}</label>

@@ -11,6 +11,18 @@ function reducer(state = initialState, action) {
     case types.GET_RESIDENTS_LIST_SUCCESS: {
       return { ...state, residents: { ...action.data } }
     }
+    case types.GET_BUILDINGS_LIST: {
+      return state
+    }
+    case types.GET_BUILDINGS_LIST_SUCCESS: {
+      return { ...state, buildings: { ...action.data } }
+    }
+    case types.GET_BUILDING: {
+      return state
+    }
+    case types.GET_BUILDING_SUCCESS: {
+      return { ...state, building: { ...action.data.building } }
+    }
     default:
       return state
   }
