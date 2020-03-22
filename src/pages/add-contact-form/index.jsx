@@ -15,7 +15,7 @@ function Component() {
     return (
         <div className={style.container}>
             <header className={style.header}>
-                <a className={style.goListLink} href='./'>← К списку жильцов</a>
+                <a className={style.goListLink} href='/residents-list'>← К списку жильцов</a>
             </header>
             <div className={style.content}>
                 <h1 className={style.title}>Введите информацию о жильце</h1>

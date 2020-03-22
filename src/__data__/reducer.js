@@ -1,6 +1,6 @@
 import * as types from './actions-types'
 
-const initialState = {}
+export const initialState = {}
 
 function reducer(state = initialState, action) {
 
@@ -9,7 +9,6 @@ function reducer(state = initialState, action) {
         return state
     }
     case types.GET_RESIDENTS_LIST_SUCCESS: {
-      console.log('action', action)
       return { ...state, residents: { ...action.data } }
     }
     default:

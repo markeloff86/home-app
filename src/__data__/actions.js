@@ -21,11 +21,9 @@ export const getResidentsList = buildingId => dispatch => {
         url: `http://89.223.30.70:8000/api/residents?building_id=${buildingId}`,
     })
         .then(response => {
-            console.log('response', response)
             dispatch(fetchgetResidentsListSuccess(response.data))
         })
         .catch(error => {
-            console.log('error', error)
             dispatch(fetchgetResidentsListFail(error))
         })
 }

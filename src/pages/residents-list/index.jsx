@@ -1,18 +1,21 @@
 import React, { useEffect } from 'react'
-import classNames from 'classnames'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
+import { createStructuredSelector } from 'reselect'
 
 import logo from '../../theme/logo.png'
 import { getResidentsList } from '../../__data__/actions'
+import { makeResidentsList } from '../../__data__/selectors'
 
 import { Menu, Content } from './components'
 import style from './style.css'
 
+const buildingName = '1'
+
 function Component(props) {
     useEffect(() => {
-        props.getResidentsList('1')
-    })
+        props.getResidentsList(buildingName)
+    }, [buildingName])
 
     return (
         <div className={style.container}>
@@ -21,20 +24,24 @@ function Component(props) {
             </header>
             <div className={style.contentWrapper}>
                 <Menu />
-                <Content />
+                <Content residentsList={props.residentsList} />
             </div>
         </div>
     )
 }
+
+const mapStateToProps = createStructuredSelector({
+    residentsList: makeResidentsList(),
+})
 
 const mapDispatchToProps = {
     getResidentsList,
 }
 
 const withConnect = connect(
-    null,
+    mapStateToProps,
     mapDispatchToProps,
-);
+)
 
 export default compose(withConnect)(Component)
 
