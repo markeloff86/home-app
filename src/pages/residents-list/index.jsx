@@ -10,7 +10,7 @@ import { makeResidentsList } from '../../__data__/selectors'
 import { Menu, Content } from './components'
 import style from './style.css'
 
-const buildingName = '1,9'
+const buildingName = '2'
 
 function Component(props) {
     useEffect(() => {

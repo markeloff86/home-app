@@ -21,11 +21,13 @@ function Component() {
                     <path fill-rule="evenodd" d="M14 9H4v2h10V9zm2-7h-1V0h-2v2H5V0H3v2H2C.89 2 .01 2.9.01 4L0 18c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 16H2V7h14v11zm-5-5H4v2h7v-2z"/>
                 </svg>
             </a>
-            <a className={style.item}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M15 10V1c0-.552-.448-1-1-1H1C.448 0 0 .448 0 1v14l4-4h10c.552 0 1-.448 1-1zm4-6h-2v9H4v2c0 .552.448 1 1 1h11l4 4V5c0-.552-.448-1-1-1z"/>
-                </svg>
-            </a>
+            <div className={style.chatItemWrapper}>
+                <a className={style.item}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M15 10V1c0-.552-.448-1-1-1H1C.448 0 0 .448 0 1v14l4-4h10c.552 0 1-.448 1-1zm4-6h-2v9H4v2c0 .552.448 1 1 1h11l4 4V5c0-.552-.448-1-1-1z"/>
+                    </svg>
+                </a>
+            </div>
             <a className={style.item}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                     <g>

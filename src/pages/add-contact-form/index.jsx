@@ -6,13 +6,20 @@ import {Field, reduxForm} from 'redux-form'
 import classNames from 'classnames'
 import _ from 'lodash'
 
-import { getBuildingsList } from '../../__data__/actions'
+import { getBuildingsList, sendResident } from '../../__data__/actions'
 import { MODERATOR_STORAGE_NAME } from '../../__data__/constants'
 import { getToken } from '../../__data__/utils'
 
 import { TextInput, SelectInput, HomeSelectInput, PhoneInput, Action } from './components'
 import style from './style.css'
-import { makeBuildingsList, makeBuildingPorches, makeBuildingPipes, makeBuildingFloorCount } from "../../__data__/selectors"
+import {
+    makeBuildingsList,
+    makeBuildingFlats,
+    makeBuildingPorches,
+    makeBuildingPipes,
+    makeBuildingFloorCount,
+    makeContactFormData,
+} from "../../__data__/selectors"
 
 function Component(props) {
     const token = getToken(MODERATOR_STORAGE_NAME)
@@ -23,7 +30,7 @@ function Component(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log('handleSubmit', e)
+        props.sendResident(props.contactFormData)
     }
 
     return (
@@ -61,17 +68,21 @@ function Component(props) {
                             label="Дом"
                             options={props.buildingsList}
                             size="md"
-                            placeholder="⛪️"
+                            placeholder="H"
                             required
                         />
-                        <Field
-                            name="flatNumber"
-                            component={TextInput}
-                            type="text"
-                            label="Квартира"
-                            size="xs"
-                            required
-                        />
+                        { !_.isEmpty(props.buildingFlats) &&
+                            <Field
+                                name="flatNumber"
+                                component={SelectInput}
+                                type="text"
+                                label="Квартира"
+                                size="sm"
+                                options={props.buildingFlats}
+                                placeholder=""
+                                required
+                            />
+                        }
                     </div>
                     {/*{ !_.isEmpty(props.buildingPorches) &&*/}
                         {/*<div className={classNames(style.fieldsSection, style.hasBorder, style.inlineFields)}>*/}
@@ -137,13 +148,16 @@ function Component(props) {
 
 const mapStateToProps = createStructuredSelector({
     buildingsList: makeBuildingsList(),
+    buildingFlats: makeBuildingFlats(),
     buildingPorches: makeBuildingPorches(),
     buildingPipes: makeBuildingPipes(),
     buildingFloorCount: makeBuildingFloorCount(),
+    contactFormData: makeContactFormData(),
 })
 
 const mapDispatchToProps = {
     getBuildingsList,
+    sendResident,
 }
 
 const withConnect = connect(

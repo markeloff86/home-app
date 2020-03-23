@@ -33,7 +33,7 @@
 
 .size-lg > div:first-child,
 .size-lg > div:nth-child(2) {
-    width: 320px;
+    width: 360px;
 }
 
 .size-md > div:first-child,
@@ -43,7 +43,7 @@
 
 .size-sm > div:first-child,
 .size-sm > div:nth-child(2) {
-    width: 76px;
+    width: 80px;
 }
 
 .size-xs > div:first-child,

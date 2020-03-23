@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
+    font-family: Glyphter, Open Sans;
 }
 
 .field > div:nth-child(2) {
@@ -38,7 +39,7 @@
 
 .size-md > div:first-child,
 .size-md > div:nth-child(2) {
-    width: 248px;
+    width: 272px;
 }
 
 .size-sm > div:first-child,

@@ -10,7 +10,7 @@ function Component(props) {
             <ReactSelect
                 {...props}
                 value={props.selectedOption}
-                onChange={props.onChange}
+                onChange={props.input.onChange}
                 options={props.options}
                 className={classNames(style.field, style[`size-${props.size}`])}
             />
