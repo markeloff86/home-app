@@ -3,22 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="60d3a572-374b-4320-9bd8-19c1e7c1e5d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__data__/actions-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__data__/actions-types.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/__data__/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__data__/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/__data__/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__data__/selectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/add-contact-form/components/home-select-input/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/add-contact-form/components/home-select-input/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/add-contact-form/components/select-input/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/add-contact-form/components/select-input/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/add-contact-form/components/select-input/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/add-contact-form/components/select-input/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/add-contact-form/components/text-input/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/add-contact-form/components/text-input/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/add-contact-form/components/text-input/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/add-contact-form/components/text-input/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/add-contact-form/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/add-contact-form/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/add-contact-form/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/add-contact-form/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/moderator-login-form/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/moderator-login-form/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/moderator-login-form/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/moderator-login-form/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/residents-list/components/content/residents/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/residents-list/components/content/residents/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/residents-list/components/content/residents/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/residents-list/components/content/residents/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/residents-list/components/menu/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/residents-list/components/menu/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/residents-list/components/menu/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/residents-list/components/menu/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/residents-list/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/residents-list/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/residents-list/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/residents-list/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,23 +22,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/moderator-login-form/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="48" column="67" lean-forward="true" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
+            <state relative-caret-position="264">
+              <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pages/moderator-login-form/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -56,10 +38,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>select</find>
-      <find>input</find>
-      <find>sele</find>
-      <find>32</find>
       <find>phone</find>
       <find>createStore</find>
       <find>0 0 0 1</find>
@@ -86,6 +64,10 @@
       <find>getResidentsList</find>
       <find>360</find>
       <find>opensans</find>
+      <find>sendResident</find>
+      <find>makeContactFormData</find>
+      <find>contactFormData</find>
+      <find>effect</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -100,6 +82,7 @@
       <dir>C:\work\home-app\node_modules\react-select\dist</dir>
       <dir>C:\work\home-app\src\__data__</dir>
       <dir>C:\work\home-app\src</dir>
+      <dir>C:\work\home-app\src\pages</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -131,22 +114,16 @@
         <option value="$PROJECT_DIR$/src/pages/residents-list/components/content/style.css" />
         <option value="$PROJECT_DIR$/src/pages/residents-list/components/content/residents/utils.js" />
         <option value="$PROJECT_DIR$/src/pages/residents-list/components/content/index.jsx" />
-        <option value="$PROJECT_DIR$/src/pages/moderator-login-form/index.jsx" />
         <option value="$PROJECT_DIR$/src/pages/add-contact-form/components/index.js" />
         <option value="$PROJECT_DIR$/src/__data__/reducer.js" />
         <option value="$PROJECT_DIR$/src/pages/add-contact-form/components/phone-input/index.jsx" />
-        <option value="$PROJECT_DIR$/src/pages/residents-list/components/content/residents/style.css" />
-        <option value="$PROJECT_DIR$/src/pages/residents-list/components/content/residents/index.jsx" />
         <option value="$USER_HOME$/Desktop/.npmrc" />
         <option value="$USER_HOME$/.yarnrc" />
         <option value="$PROJECT_DIR$/../investments.contract/.npmrc" />
         <option value="$USER_HOME$/.npmrc" />
-        <option value="$PROJECT_DIR$/src/pages/residents-list/index.jsx" />
         <option value="$PROJECT_DIR$/src/pages/add-contact-form/components/text-input/index.jsx" />
         <option value="$PROJECT_DIR$/src/pages/add-contact-form/components/select-input/index.jsx" />
         <option value="$PROJECT_DIR$/src/__data__/actions-types.js" />
-        <option value="$PROJECT_DIR$/src/__data__/selectors.js" />
-        <option value="$PROJECT_DIR$/src/__data__/actions.js" />
         <option value="$PROJECT_DIR$/src/pages/add-contact-form/components/select-input/style.css" />
         <option value="$PROJECT_DIR$/src/pages/add-contact-form/components/text-input/style.css" />
         <option value="$PROJECT_DIR$/src/index.js" />
@@ -156,9 +133,15 @@
         <option value="$PROJECT_DIR$/src/pages/add-contact-form/components/home-select-input/style.css" />
         <option value="$PROJECT_DIR$/src/pages/add-contact-form/style.css" />
         <option value="$PROJECT_DIR$/src/pages/residents-list/style.css" />
-        <option value="$PROJECT_DIR$/src/pages/residents-list/components/menu/index.jsx" />
         <option value="$PROJECT_DIR$/src/pages/residents-list/components/menu/style.css" />
         <option value="$PROJECT_DIR$/src/pages/moderator-login-form/style.css" />
+        <option value="$PROJECT_DIR$/src/pages/residents-list/index.jsx" />
+        <option value="$PROJECT_DIR$/src/__data__/selectors.js" />
+        <option value="$PROJECT_DIR$/src/__data__/actions.js" />
+        <option value="$PROJECT_DIR$/src/pages/residents-list/components/content/residents/style.css" />
+        <option value="$PROJECT_DIR$/src/pages/residents-list/components/content/residents/index.jsx" />
+        <option value="$PROJECT_DIR$/src/pages/residents-list/components/menu/index.jsx" />
+        <option value="$PROJECT_DIR$/src/pages/moderator-login-form/index.jsx" />
       </list>
     </option>
   </component>
@@ -168,11 +151,11 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
-    <option name="width" value="1939" />
-    <option name="height" value="1049" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -181,7 +164,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -198,6 +180,12 @@
               <item name="home-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="home-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="__data__" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="home-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="home-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -207,10 +195,18 @@
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="moderator-login-form" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="home-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="home-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="residents-list" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -347,12 +343,16 @@
       <workItem from="1584983304187" duration="428000" />
       <workItem from="1584985449353" duration="1792000" />
       <workItem from="1584987265571" duration="1788000" />
-      <workItem from="1584989104132" duration="1317000" />
+      <workItem from="1584989104132" duration="1858000" />
+      <workItem from="1585028787601" duration="2000" />
+      <workItem from="1585030507669" duration="1291000" />
+      <workItem from="1585032340901" duration="1505000" />
+      <workItem from="1585075573615" duration="1616000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108499000" />
+    <option name="totallyTimeSpent" value="113454000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -406,13 +406,6 @@
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__data__/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -499,16 +492,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/residents-list/components/content/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/.npmrc">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -516,23 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/residents-list/components/content/residents/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="12" column="87" selection-start-line="12" selection-start-column="87" selection-end-line="12" selection-end-column="87" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/residents-list/components/content/residents/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -571,33 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/__data__/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2002">
-          <caret line="96" column="30" selection-start-line="96" selection-start-column="30" selection-end-line="96" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__data__/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__data__/selectors.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="968">
-          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="51" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/add-contact-form/components/select-input/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
@@ -605,9 +544,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Glyphter.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Glyphter.svg" />
     <entry file="file://$PROJECT_DIR$/src/pages/add-contact-form/components/home-select-input/icon-house.svg" />
     <entry file="file://$PROJECT_DIR$/src/theme/index.css">
       <provider selected="true" editor-type-id="text-editor" />
@@ -676,30 +613,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/add-contact-form/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="37" column="41" lean-forward="true" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/residents-list/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -717,30 +634,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/residents-list/components/menu/index.jsx">
+    <entry file="file://$PROJECT_DIR$/src/pages/moderator-login-form/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+        <state relative-caret-position="362">
+          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/add-contact-form/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="159" column="13" lean-forward="true" selection-start-line="159" selection-start-column="13" selection-end-line="159" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__data__/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/moderator-login-form/index.jsx">
+    <entry file="file://$PROJECT_DIR$/src/__data__/selectors.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="48" column="67" lean-forward="true" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
+        <state relative-caret-position="110">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/moderator-login-form/style.css">
+    <entry file="file://$PROJECT_DIR$/src/__data__/reducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+        <state relative-caret-position="242">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/residents-list/components/content/residents/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="79" column="5" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/residents-list/components/content/residents/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/residents-list/components/content/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/residents-list/components/menu/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="30" column="52" lean-forward="true" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/residents-list/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="15" selection-start-line="15" selection-end-line="17" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__data__/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/moderator-login-form/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -40,15 +40,15 @@ export const makeBuildingFloorCount = () =>
 export const makeContactFormData = () =>
     createSelector(form, slice => {
         const values = _.get(slice, 'AddContactForm.values')
-        // return _.map(new Array(floorsCount), (item, key) => ({ value: key + 1, label: key + 1 }))
+        const data = {
+            first_name: _.get(values, 'name'),
+            last_name: _.get(values, 'surname'),
+            phone_number: _.get(values, 'phoneNumber'),
+            email: _.get(values, 'email'),
+            flat: _.get(values, 'flatNumber.value' )
+        }
 
-        return ({
-            "first_name": "Питон",
-            "middle_name": "Питонов",
-            "last_name": "Питонович",
-            "phone_number": "+79136740808",
-            "email": "test@mail.ru",
-            "flat": 1,
-            "status": "added"
-        })
+        console.log('data', data)
+
+        return data
     })

@@ -87,16 +87,8 @@ export const sendResident = data => dispatch => {
             'authorization': `Token ${getToken(MODERATOR_STORAGE_NAME)}`,
             'Content-Type': 'application/json',
         },
-        data: {
-            "first_name": "Питон",
-            "middle_name": "Питонов",
-            "last_name": "Питонович",
-            "phone_number": "+79136740808",
-            "email": "test@mail.ru",
-            "flat": 1,
-            "status": "added",
-        },
-        url: 'http://89.223.30.70:8000/api/signup',
+        data,
+        url: 'http://89.223.30.70:8000/api/signup/',
     })
         .then(response => {
             dispatch(fetchSendResidentSuccess(response.data))

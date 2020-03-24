@@ -28,7 +28,7 @@ function Component() {
                     </svg>
                 </a>
             </div>
-            <a className={style.item}>
+            <a className={style.item} href='/login'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                     <g>
                         <path d="M17.778 0H2.222C.994 0 0 .994 0 2.222v4.445h2.222V2.222h15.556v15.556H2.222v-4.445H0v4.445C0 19.006.994 20 2.222 20h15.556C19.006 20 20 19.006 20 17.778V2.222C20 .994 19.006 0 17.778 0z" transform="matrix(-1 0 0 1 20 0)"/>

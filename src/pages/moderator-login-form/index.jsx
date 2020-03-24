@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useEffect, useState} from 'react'
 import axios from 'axios'
 import _ from 'lodash'
 
@@ -19,6 +19,9 @@ function Component() {
         setPassword(e.target.value)
     }
 
+    useEffect(() => {
+        localStorage.removeItem(MODERATOR_STORAGE_NAME)
+    }, [MODERATOR_STORAGE_NAME])
 
     function handleSubmit(e) {
         e.preventDefault()
