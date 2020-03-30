@@ -16,8 +16,12 @@ import style from './style.css'
 
 function Component(props) {
     const token = getToken(MODERATOR_STORAGE_NAME)
+    const defaultBuilding = props.buildingsList[0]['value']
 
-    const [currentBuildingId, setBuilding] = useState(1)
+    const [currentBuildingId, setBuilding] = React.useState(defaultBuilding)
+    React.useEffect(() => {
+        setBuilding(defaultBuilding)
+    }, [defaultBuilding])
 
     const handleChangeBuilding = (e) => {
         setBuilding(e.value)
