@@ -14,7 +14,7 @@ function Component(props) {
         props.getBuilding(e.value)
     }
 
-return (
+    return (
         <div className={style.container}>
             <ReactSelect
                 {...props}

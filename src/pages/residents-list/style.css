@@ -9,6 +9,7 @@
     box-shadow: 0 0 16px -8px rgba(0, 0, 0, 0.25);
     background-color: #fff;
     z-index: 2;
+    display: flex;
 }
 
 .logo {
@@ -18,7 +19,37 @@
     padding-right: 16px;
 }
 
+.logoWrapper {
+    flex-grow: 1;
+}
+
 .contentWrapper {
     display: flex;
     flex-grow: 1;
+}
+
+.buildingField {
+    font-family: Glyphter, Open Sans;
+    margin: 10px 32px 10px 10px;
+    font-weight: bold;
+}
+
+.buildingField > div:nth-child(2) {
+    box-shadow: none;
+    border: solid 2px #000;
+}
+
+.buildingField > div:first-child {
+    border: solid 1px #eef3f4;
+}
+
+.buildingField > div:first-child,
+.buildingField > div:nth-child(2) {
+    border-radius: 4px;
+    font-size: 14px;
+    width: 340px;
+    height: 40px;
+    min-height: 40px;
+    flex-wrap: unset;
+    box-sizing: border-box;
 }

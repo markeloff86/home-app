@@ -22,7 +22,9 @@ function Component(props) {
                 <div key={key} className={style.residentItem}>
                     <div className={style.name}>{`${resident['last_name']} ${resident['first_name']}`}</div>
                     <div className={style.phone}>{formatPhoneNumber(resident['phone_number'])}</div>
-                    <div className={style.homeNumber}>Имя улицы</div>
+                    <div className={style.homeNumber}>{
+                        `${resident['flat']['building']['street']}, ${resident['flat']['building']['number']}`
+                    }</div>
                     <div className={style.flatNumber}>{resident['flat']['number']}</div>
                     <div className={style.porch}>{resident['flat']['porch']['number']}</div>
                     <div className={style.floor}>{resident['flat']['floor']}</div>

@@ -1,16 +1,31 @@
 import { createSelector } from 'reselect'
 import _ from 'lodash'
 
+import { declOfNum } from './utils'
+
 const app = state => _.get(state, 'app', {})
 const form = state => _.get(state, 'form', {})
 
 export const makeResidentsList = () =>
     createSelector(app, slice => _.get(slice, 'residents'))
 
-export const makeBuildingsList = () =>
+export const makeBuildingsList = (hasAllBuildings = false) =>
     createSelector(app, slice => {
-        const list = _.get(slice, 'buildings')
-        return _.map(list, item => ({ value: item.id, label: `${item.street}, ${item.number}` }))
+        const buildings = _.get(slice, 'buildings')
+        const list = _.map(buildings, item => ({ value: item.id, label: `${item.street}, ${item.number}` }))
+        if (hasAllBuildings) {
+
+            const buildingsId = _.map(list, i => i.value)
+            const allBuildingsKey = buildingsId.toString()
+            const buildingText = declOfNum(buildingsId.length, ['дом', 'дома', 'домов'])
+            const allBuildingsValue = `Все ${buildingsId.length} ${buildingText}`
+            const option = {
+                value: allBuildingsKey,
+                label: allBuildingsValue,
+            }
+            return ([ option, ...list ])
+        }
+        return list
     })
 
 export const makeBuildingFlats = () =>
