@@ -6,6 +6,12 @@ import { declOfNum } from './utils'
 const app = state => _.get(state, 'app', {})
 const form = state => _.get(state, 'form', {})
 
+export const makeIsLoading = () =>
+    createSelector(app, slice => _.get(slice, 'isLoading'))
+
+export const makeIsRequestError = () =>
+    createSelector(app, slice => _.get(slice, 'isRequestError'))
+
 export const makeResidentsList = () =>
     createSelector(app, slice => _.get(slice, 'residents'))
 
