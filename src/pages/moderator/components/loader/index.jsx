@@ -1,7 +1,7 @@
 import React from 'react'
 
 import style from './style.css'
-import Image from './loader.gif'
+import Image from './loader.svg'
 
 function Component() {
     return (

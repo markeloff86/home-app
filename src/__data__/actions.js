@@ -92,6 +92,7 @@ export const sendResident = data => dispatch => {
     })
         .then(response => {
             dispatch(fetchSendResidentSuccess(response.data))
+            window.location.href = '/residents-list'
         })
         .catch(error => {
             dispatch(fetchSendResidentFail(error))
