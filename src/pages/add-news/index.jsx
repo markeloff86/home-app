@@ -10,7 +10,7 @@ import { getBuildingsList, sendResident } from '../../__data__/actions'
 import { MODERATOR_STORAGE_NAME } from '../../__data__/constants'
 import { getToken } from '../../__data__/utils'
 
-import { TextInput, SelectInput, HomeSelectInput, PhoneInput, Action } from '../components/form-fields'
+import { TextInput, TextArea, SelectInput, HomeSelectInput, PhoneInput, Action } from '../components/form-fields'
 import style from './style.css'
 import {
     makeBuildingsList,
@@ -36,29 +36,29 @@ function Component(props) {
     return (
         <div className={style.container}>
             <header className={style.header}>
-                <a className={style.goListLink} href='/residents-list'>← К списку жильцов</a>
+                <a className={style.goListLink} href='/news-list'>← К списку объявлений</a>
             </header>
             <div className={style.content}>
-                <h1 className={style.title}>Введите информацию о жильце</h1>
+                <h1 className={style.title}>Укажите кому и о чем хотите рассказать</h1>
                 <form onSubmit={handleSubmit}>
                     <div className={style.fieldsSection}>
                         <Field
-                            name="name"
+                            name="newsTitle"
                             component={TextInput}
                             type="text"
-                            label="Имя"
-                            size="lg"
-                            required
+                            label="Дом"
+                            value=''
+                            placeholder=""
                         />
                     </div>
                     <div className={style.fieldsSection}>
                         <Field
-                            name="surname"
-                            component={TextInput}
+                            name="newsTitle"
+                            component={TextArea}
                             type="text"
-                            label="Фамилия"
-                            size="lg"
-                            required
+                            label="Содержание"
+                            value=''
+                            placeholder=""
                         />
                     </div>
                     <div className={classNames(style.fieldsSection, style.hasBorder, style.inlineFields)}>
@@ -84,39 +84,7 @@ function Component(props) {
                             />
                         }
                     </div>
-                    {/*{ !_.isEmpty(props.buildingPorches) &&*/}
-                        {/*<div className={classNames(style.fieldsSection, style.hasBorder, style.inlineFields)}>*/}
-                            {/*<Field*/}
-                                {/*name="entranceNumber"*/}
-                                {/*component={SelectInput}*/}
-                                {/*options={props.buildingPorches}*/}
-                                {/*type="text"*/}
-                                {/*label="Подъезд"*/}
-                                {/*size="sm"*/}
-                                {/*required*/}
-                            {/*/>*/}
-                            {/*<div className={style.growField}>*/}
-                                {/*<Field*/}
-                                    {/*name="floorNumber"*/}
-                                    {/*component={SelectInput}*/}
-                                    {/*options={props.buildingFloorCount}*/}
-                                    {/*type="text"*/}
-                                    {/*label="Этаж"*/}
-                                    {/*size="sm"*/}
-                                    {/*required*/}
-                                {/*/>*/}
-                            {/*</div>*/}
-                            {/*<Field*/}
-                                {/*name="riserNumber"*/}
-                                {/*component={SelectInput}*/}
-                                {/*options={props.buildingPipes}*/}
-                                {/*type="text"*/}
-                                {/*label="Стояк"*/}
-                                {/*size="xs"*/}
-                                {/*required*/}
-                            {/*/>*/}
-                        {/*</div>*/}
-                    {/*}*/}
+
                     <div className={classNames(style.fieldsSection, style.hasBorder)}>
                         <Field
                             name="phoneNumber"

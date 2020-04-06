@@ -4,7 +4,7 @@ import { createStructuredSelector } from "reselect"
 import {connect} from "react-redux"
 import {compose} from "redux"
 
-import { ModeratorLoginForm, AddContactForm, ResidentsList } from '../'
+import { ModeratorLoginForm, AddContactForm, ResidentsList, AddNews } from '../'
 import { makeIsLoading, makeIsRequestError } from "../../__data__/selectors"
 
 import style from './style.css'
@@ -21,6 +21,9 @@ function Component({ isLoading, isRequestError }) {
                     </Route>
                     <Route path="/add-contact" exact>
                         <AddContactForm />
+                    </Route>
+                    <Route path="/add-news" exact>
+                        <AddNews />
                     </Route>
                     <Route path="/residents-list" exact>
                         <ResidentsList />
