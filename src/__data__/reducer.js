@@ -59,7 +59,6 @@ function reducer(state = initialState, action) {
     case types.GET_BUILDING_FAIL: {
       return {
         ...state,
-        building: { ...action.data.building },
         isLoading: false,
         isRequestError: true,
       }

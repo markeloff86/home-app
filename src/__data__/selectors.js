@@ -15,7 +15,7 @@ export const makeIsRequestError = () =>
 export const makeResidentsList = () =>
     createSelector(app, slice => _.get(slice, 'residents'))
 
-export const makeBuildingsList = (hasAllBuildings = false) =>
+export const makeContactBuildingsList = (hasAllBuildings = false) =>
     createSelector(app, slice => {
         const buildings = _.get(slice, 'buildings')
         const list = _.map(buildings, item => ({ value: item.id, label: `${item.street}, ${item.number}` }))
@@ -69,7 +69,28 @@ export const makeContactFormData = () =>
             flat: _.get(values, 'flatNumber.value' )
         }
 
-        console.log('data', data)
-
         return data
+    })
+
+export const makeNewsBuildingsList = () =>
+    createSelector(app, slice => {
+        const buildings = _.get(slice, 'buildings')
+        const list = _.map(buildings, item => ({ value: item.id, label: `${item.street}, ${item.number}` }))
+
+        const buildingsId = _.map(list, i => i.value)
+        const numberPrefix = declOfNum(buildingsId.length, ['-му', '-ум', '-ти'])
+        const buildingText = declOfNum(buildingsId.length, ['дом', 'домам', 'домам'])
+        const allBuildingsValue = `Всем ${buildingsId.length}${numberPrefix} ${buildingText}`
+        const allBuildingsOption = {
+            value: 'all',
+            label: allBuildingsValue,
+        }
+
+        const someBuildingsOption = {
+            value: 'some',
+            label: 'Некоторым домам',
+        }
+
+        return ([ allBuildingsOption, someBuildingsOption, ...list ])
+
     })

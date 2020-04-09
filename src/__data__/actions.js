@@ -60,7 +60,7 @@ export const getBuildingsList = token => dispatch => {
 }
 
 export const getBuilding = id => dispatch => {
-    dispatch(fetchGetBuildingsList())
+    dispatch(fetchGetBuilding())
 
     return axios({
         method: 'GET',

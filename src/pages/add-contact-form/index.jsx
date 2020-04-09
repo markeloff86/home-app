@@ -10,10 +10,10 @@ import { getBuildingsList, sendResident } from '../../__data__/actions'
 import { MODERATOR_STORAGE_NAME } from '../../__data__/constants'
 import { getToken } from '../../__data__/utils'
 
-import { TextInput, SelectInput, HomeSelectInput, PhoneInput, Action } from '../components/form-fields'
-import style from './style.css'
+import { TextInput, SelectInput, HomeSelectInput, PhoneInput, Action } from '../components/form'
+import formStyle from '../components/form/style.css'
 import {
-    makeBuildingsList,
+    makeContactBuildingsList,
     makeBuildingFlats,
     makeBuildingPorches,
     makeBuildingPipes,
@@ -34,14 +34,14 @@ function Component(props) {
     }
 
     return (
-        <div className={style.container}>
-            <header className={style.header}>
-                <a className={style.goListLink} href='/residents-list'>← К списку жильцов</a>
+        <div className={formStyle.container}>
+            <header className={formStyle.header}>
+                <a className={formStyle.goListLink} href='/residents-list'>← К списку жильцов</a>
             </header>
-            <div className={style.content}>
-                <h1 className={style.title}>Введите информацию о жильце</h1>
+            <div className={formStyle.content}>
+                <h1 className={formStyle.title}>Введите информацию о жильце</h1>
                 <form onSubmit={handleSubmit}>
-                    <div className={style.fieldsSection}>
+                    <div className={formStyle.fieldsSection}>
                         <Field
                             name="name"
                             component={TextInput}
@@ -51,7 +51,7 @@ function Component(props) {
                             required
                         />
                     </div>
-                    <div className={style.fieldsSection}>
+                    <div className={formStyle.fieldsSection}>
                         <Field
                             name="surname"
                             component={TextInput}
@@ -61,7 +61,7 @@ function Component(props) {
                             required
                         />
                     </div>
-                    <div className={classNames(style.fieldsSection, style.hasBorder, style.inlineFields)}>
+                    <div className={classNames(formStyle.fieldsSection, formStyle.hasBorder, formStyle.inlineFields)}>
                         <Field
                             name="homeNumber"
                             component={HomeSelectInput}
@@ -70,6 +70,7 @@ function Component(props) {
                             size="md"
                             placeholder="H"
                             required
+                            makeRequest={true}
                         />
                         { !_.isEmpty(props.buildingFlats) &&
                             <Field
@@ -85,7 +86,7 @@ function Component(props) {
                         }
                     </div>
                     {/*{ !_.isEmpty(props.buildingPorches) &&*/}
-                        {/*<div className={classNames(style.fieldsSection, style.hasBorder, style.inlineFields)}>*/}
+                        {/*<div className={classNames(formStyle.fieldsSection, formStyle.hasBorder, formStyle.inlineFields)}>*/}
                             {/*<Field*/}
                                 {/*name="entranceNumber"*/}
                                 {/*component={SelectInput}*/}
@@ -95,7 +96,7 @@ function Component(props) {
                                 {/*size="sm"*/}
                                 {/*required*/}
                             {/*/>*/}
-                            {/*<div className={style.growField}>*/}
+                            {/*<div className={formStyle.growField}>*/}
                                 {/*<Field*/}
                                     {/*name="floorNumber"*/}
                                     {/*component={SelectInput}*/}
@@ -117,7 +118,7 @@ function Component(props) {
                             {/*/>*/}
                         {/*</div>*/}
                     {/*}*/}
-                    <div className={classNames(style.fieldsSection, style.hasBorder)}>
+                    <div className={classNames(formStyle.fieldsSection, formStyle.hasBorder)}>
                         <Field
                             name="phoneNumber"
                             component={PhoneInput}
@@ -127,7 +128,7 @@ function Component(props) {
                             placeholder="+7 ()"
                         />
                     </div>
-                    <div className={style.fieldsSection}>
+                    <div className={formStyle.fieldsSection}>
                         <Field
                             name="email"
                             component={TextInput}
@@ -137,7 +138,7 @@ function Component(props) {
                             placeholder="@"
                         />
                     </div>
-                    <div className={style.actions}>
+                    <div className={formStyle.actions}>
                         <Action type="submit" text="Добавить" />
                     </div>
                 </form>
@@ -147,7 +148,7 @@ function Component(props) {
 }
 
 const mapStateToProps = createStructuredSelector({
-    buildingsList: makeBuildingsList(),
+    buildingsList: makeContactBuildingsList(),
     buildingFlats: makeBuildingFlats(),
     buildingPorches: makeBuildingPorches(),
     buildingPipes: makeBuildingPipes(),

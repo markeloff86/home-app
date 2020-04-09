@@ -7,7 +7,7 @@ import _ from 'lodash'
 
 import logo from '../../theme/logo.png'
 import { getBuildingsList, getResidentsList } from '../../__data__/actions'
-import { makeBuildingsList, makeResidentsList } from '../../__data__/selectors'
+import { makeContactBuildingsList, makeResidentsList } from '../../__data__/selectors'
 import {getToken} from '../../__data__/utils'
 import {MODERATOR_STORAGE_NAME} from '../../__data__/constants'
 
@@ -56,7 +56,7 @@ function Component(props) {
 }
 
 const mapStateToProps = createStructuredSelector({
-    buildingsList: makeBuildingsList(true),
+    buildingsList: makeContactBuildingsList(true),
     residentsList: makeResidentsList(),
 })
 
