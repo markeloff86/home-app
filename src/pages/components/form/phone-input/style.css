@@ -1,0 +1,28 @@
+.container input {
+    height: 32px;
+    border-radius: 2px;
+    border: solid 1px #777a82;
+    font-size: 14px;
+    padding: 10px 8px;
+    outline: none;
+    width: 160px;
+    box-sizing: border-box;
+}
+
+.container input:focus {
+    border: solid 2px #000;
+}
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}
+
+.label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #777a82;
+    margin-bottom: 3px;
+}

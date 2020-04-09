@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    height: 18px;
+    align-items: center;
+}
+
+.field {
+    height: 0;
+    width: 0;
+}
+
+.field:before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #3c3c3c;
+    border-radius: 2px;
+    background-color: #fff;
+    margin-top: -8px;
+}
+
+.field:checked:before {
+    background-color: #000;
+}
+
+.field:focus {
+
+}
+
+.field:focus + .label {
+
+}
+
+
+.label {
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    color: #000;
+    margin-left: 22px;
+}
