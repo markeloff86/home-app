@@ -10,7 +10,7 @@ import { getBuildingsList, sendResident } from '../../__data__/actions'
 import { MODERATOR_STORAGE_NAME } from '../../__data__/constants'
 import { getToken } from '../../__data__/utils'
 
-import { TextInput, TextArea, HomeSelectInput, Checkbox, Action, RadioGroup, SelectInput } from '../components/form'
+import { TextInput, TextArea, HomeSelectInput, Checkbox, Action, RadioGroupMenu, SelectInput, RadioGroup } from '../components/form'
 import formStyle from '../components/form/style.css'
 import {
     makeNewsBuildingsList,
@@ -114,7 +114,7 @@ function Component(props) {
                     <div className={formStyle.fieldsSection}>
                         <Field
                             name="test"
-                            component={RadioGroup}
+                            component={RadioGroupMenu}
                             type="radio"
                             label="Radio group"
                             value=''
@@ -133,6 +133,17 @@ function Component(props) {
                             placeholder=""
                             required
                             isMulti={true}
+                        />
+                    </div>
+
+                    <div className={formStyle.fieldsSection}>
+                        <Field
+                            name="test"
+                            component={RadioGroup}
+                            type="radio"
+                            label="Radio group"
+                            value=''
+                            placeholder=""
                         />
                     </div>
 

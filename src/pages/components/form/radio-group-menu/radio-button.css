@@ -1,0 +1,23 @@
+.container {
+
+}
+
+.field {
+    display: none;
+}
+
+.field:checked + label {
+    border-radius: 50px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+    background-color: #fff;
+    color: #000;
+}
+
+.label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #5a5a5a;
+    padding: 10px 16px;
+    cursor: pointer;
+    display: block;
+}

@@ -6,15 +6,30 @@ import RadioButton from './radio-button'
 
 const items = [
     {
-        value: 'all',
-        name: 'group2',
-        title: 'Все 13 этажей',
+        value: 'home',
+        name: 'group',
+        title: 'На весь дом',
     },
     {
-        value: 'some',
-        name: 'group2',
-        title: 'Некоторые этажи',
-    }
+        value: 'apartments',
+        name: 'group',
+        title: 'Квартиры',
+    },
+    {
+        value: 'entrances',
+        name: 'group',
+        title: 'Подъезды',
+    },
+    {
+        value: 'floors',
+        name: 'group',
+        title: 'Этажи',
+    },
+    {
+        value: 'risers',
+        name: 'group',
+        title: 'Стояки',
+    },
 ]
 
 function Component(props) {

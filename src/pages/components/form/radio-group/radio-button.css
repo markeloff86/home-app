@@ -6,18 +6,22 @@
     display: none;
 }
 
-.field:checked + label {
-    border-radius: 50px;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 2px 0 rgba(0, 0, 0, 0.12);
-    background-color: #fff;
+.label {
+    font-size: 14px;
+    font-weight: 600;
     color: #000;
 }
 
-.label {
-    font-size: 12px;
-    font-weight: bold;
-    color: #5a5a5a;
-    padding: 10px 16px;
-    cursor: pointer;
+.label:before {
+    content: '';
     display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid #3c3c3c;
+    border-radius: 100%;
+}
+
+.field:checked + label:before {
+
 }

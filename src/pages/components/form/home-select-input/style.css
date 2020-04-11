@@ -18,10 +18,20 @@
 .field > div:nth-child(2) {
     border-radius: 2px;
     font-size: 14px;
-    height: 32px;
+    height: auto;
     min-height: 32px;
     flex-wrap: unset;
     box-sizing: border-box;
+}
+
+.field > div:first-child span,
+.field > div:nth-child(2) span {
+    display: none;
+}
+
+.field > div:first-child span + div ,
+.field > div:nth-child(2) span + div  {
+    padding: 5px 8px;
 }
 
 .label {
