@@ -4,10 +4,9 @@ import { compose } from 'redux'
 import { createStructuredSelector } from 'reselect'
 import {Field, reduxForm} from 'redux-form'
 import classNames from 'classnames'
-import _ from 'lodash'
 
-import { getBuildingsList, sendResident } from '../../__data__/actions'
-import { MODERATOR_STORAGE_NAME } from '../../__data__/constants'
+import { getBuildingsList } from '../../__data__/actions'
+import { MODERATOR_STORAGE_NAME, NEWS_TYPES_LIST } from '../../__data__/constants'
 import { getToken } from '../../__data__/utils'
 
 import { TextInput, TextArea, HomeSelectInput, Checkbox, Action, RadioGroupMenu, SelectInput, RadioGroup } from '../components/form'
@@ -136,18 +135,6 @@ function Component(props) {
                         />
                     </div>
 
-                    <div className={formStyle.fieldsSection}>
-                        <Field
-                            name="test"
-                            component={RadioGroup}
-                            type="radio"
-                            label="Radio group"
-                            value=''
-                            placeholder=""
-                        />
-                    </div>
-
-
                     <div className={formStyle.delimiter} />
                     <div className={formStyle.fieldsSection}>
                         <Field
@@ -162,12 +149,18 @@ function Component(props) {
                     </div>
                     <div className={formStyle.fieldsSection}>
                         <Field
-                            name="newsTitle"
+                            name="newsDescription"
                             component={TextArea}
                             type="text"
                             label="Содержание"
                             value=''
                             placeholder=""
+                        />
+                    </div>
+                    <div className={formStyle.fieldsSection}>
+                        <RadioGroup
+                            name="newsType"
+                            items={NEWS_TYPES_LIST}
                         />
                     </div>
                     <div className={formStyle.actions}>
@@ -190,7 +183,6 @@ const mapStateToProps = createStructuredSelector({
 
 const mapDispatchToProps = {
     getBuildingsList,
-    sendResident,
 }
 
 const withConnect = connect(

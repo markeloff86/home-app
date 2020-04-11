@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import axios from 'axios'
 import _ from 'lodash'
 
-import { MODERATOR_STORAGE_NAME } from '../../__data__/constants'
+import { MODERATOR_STORAGE_NAME, SERVICE_URL } from '../../__data__/constants'
 
 import logo from './logo.svg'
 import style from './style.css'
@@ -25,7 +25,7 @@ function Component() {
 
     function handleSubmit(e) {
         e.preventDefault()
-        axios.post('http://89.223.30.70:8000/api/auth', {username, password})
+        axios.post(`${SERVICE_URL}/api/auth`, {username, password})
             .then((response) => {
                 const token = _.get(response, ['data', 'token'] )
                 localStorage.setItem(MODERATOR_STORAGE_NAME, token)
