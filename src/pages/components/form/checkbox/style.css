@@ -12,16 +12,15 @@
 .field:before {
     content: '';
     display: block;
-    width: 16px;
-    height: 16px;
-    border: 1px solid #3c3c3c;
-    border-radius: 2px;
-    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    background-image: url("./images/checkbox_off.svg");
     margin-top: -8px;
+    border: none;
 }
 
 .field:checked:before {
-    background-color: #000;
+    background-image: url("./images/checkbox_on.svg");
 }
 
 .field:focus {

@@ -3,13 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="60d3a572-374b-4320-9bd8-19c1e7c1e5d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/add-news-form/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/add-news-form/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/form/home-select-input/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/form/home-select-input/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/form/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/form/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/form/radio-group/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/form/radio-group/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/components/form/checkbox/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/form/checkbox/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/components/form/radio-group/radio-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/form/radio-group/radio-button.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/components/form/radio-group/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/form/radio-group/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/form/select-input/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/form/select-input/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,7 +21,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/add-news-form/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2596">
+            <state>
               <caret line="141" column="46" selection-start-line="141" selection-start-column="46" selection-end-line="141" selection-end-column="46" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
@@ -35,55 +31,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/components/form/radio-group/index.jsx">
+        <entry file="file://$PROJECT_DIR$/src/pages/components/form/checkbox/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/components/form/radio-group/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/components/form/radio-group/radio-button.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/components/form/radio-group/radio-button.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="44">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pages/components/form/select-input/style.css">
+        <entry file="file://$PROJECT_DIR$/src/pages/components/form/checkbox/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/components/form/home-select-input/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="26" selection-start-line="26" selection-end-line="34" selection-end-column="1" />
+            <state relative-caret-position="330">
+              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -191,15 +151,15 @@
         <option value="$PROJECT_DIR$/src/pages/components/form/checkbox/index.jsx" />
         <option value="$PROJECT_DIR$/src/pages/add-news-form/style.css" />
         <option value="$PROJECT_DIR$/src/pages/components/form/style.css" />
-        <option value="$PROJECT_DIR$/src/pages/components/form/checkbox/style.css" />
         <option value="$PROJECT_DIR$/src/pages/components/form/radio-group/radio-button.jsx" />
         <option value="$PROJECT_DIR$/src/pages/components/form/index.js" />
         <option value="$PROJECT_DIR$/src/pages/add-news-form/index.jsx" />
         <option value="$PROJECT_DIR$/src/pages/components/form/radio-group/index.jsx" />
-        <option value="$PROJECT_DIR$/src/pages/components/form/radio-group/style.css" />
-        <option value="$PROJECT_DIR$/src/pages/components/form/radio-group/radio-button.css" />
         <option value="$PROJECT_DIR$/src/pages/components/form/home-select-input/style.css" />
         <option value="$PROJECT_DIR$/src/pages/components/form/select-input/style.css" />
+        <option value="$PROJECT_DIR$/src/pages/components/form/radio-group/style.css" />
+        <option value="$PROJECT_DIR$/src/pages/components/form/radio-group/radio-button.css" />
+        <option value="$PROJECT_DIR$/src/pages/components/form/checkbox/style.css" />
       </list>
     </option>
   </component>
@@ -267,6 +227,15 @@
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="home-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="home-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="form" type="462c0819:PsiDirectoryNode" />
+              <item name="checkbox" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="home-app" type="b2602c69:ProjectViewProjectNode" />
@@ -476,12 +445,12 @@
       <workItem from="1586445102802" duration="1789000" />
       <workItem from="1586449051655" duration="1771000" />
       <workItem from="1586504307434" duration="6000" />
-      <workItem from="1586591249281" duration="309000" />
+      <workItem from="1586591249281" duration="1447000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147981000" />
+    <option name="totallyTimeSpent" value="149119000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -731,23 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/components/form/checkbox/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/components/form/checkbox/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/components/form/select-input/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -762,44 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/add-news-form/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2596">
-          <caret line="141" column="46" selection-start-line="141" selection-start-column="46" selection-end-line="141" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/components/form/radio-group/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/components/form/radio-group/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/components/form/radio-group/radio-button.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/components/form/radio-group/radio-button.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/components/form/home-select-input/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -811,6 +725,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/components/form/radio-group/radio-button.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/components/form/radio-group/radio-button.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/components/form/radio-group/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/components/form/radio-group/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/add-news-form/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="141" column="46" selection-start-line="141" selection-start-column="46" selection-end-line="141" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/components/form/checkbox/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/components/form/checkbox/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
         </state>
       </provider>
     </entry>
