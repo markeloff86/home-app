@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="60d3a572-374b-4320-9bd8-19c1e7c1e5d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__data__/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__data__/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__data__/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__data__/constants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/add-news-form/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/add-news-form/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/form/radio-group/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/form/radio-group/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/components/form/radio-group/radio-button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/components/form/radio-group/radio-button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/moderator-login-form/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/moderator-login-form/index.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/add-news-form/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="161" column="42" selection-start-line="161" selection-start-column="34" selection-end-line="161" selection-end-column="42" />
+            <state relative-caret-position="286">
+              <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -34,23 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/components/form/radio-group/index.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pages/components/form/radio-group/radio-button.jsx">
+        <entry file="file://$PROJECT_DIR$/src/pages/add-news-form/home-select-input/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -62,7 +44,6 @@
       <find>effect</find>
       <find>getToken</find>
       <find>useState</find>
-      <find>getBuildingsList</find>
       <find>ReactSelect</find>
       <find>console.log</find>
       <find>state</find>
@@ -73,7 +54,6 @@
       <find>fetchGetBuildingsListSuccess</find>
       <find>fetchGetBuildingSuccess</find>
       <find>makeBuildingsList</find>
-      <find>buildingsList</find>
       <find>building</find>
       <find>border</find>
       <find>style</find>
@@ -89,6 +69,8 @@
       <find>${SERVICE_URL}</find>
       <find>http://89.223.30.70:8000</find>
       <find>RadioGroup</find>
+      <find>getBuildingsList</find>
+      <find>buildingsList</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -117,7 +99,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/__data__/actions-types.js" />
         <option value="$PROJECT_DIR$/src/pages/add-contact-form/components/select-input/style.css" />
         <option value="$PROJECT_DIR$/src/pages/add-contact-form/components/text-input/style.css" />
         <option value="$PROJECT_DIR$/src/index.js" />
@@ -165,9 +146,10 @@
         <option value="$PROJECT_DIR$/src/__data__/actions.js" />
         <option value="$PROJECT_DIR$/src/pages/moderator-login-form/index.jsx" />
         <option value="$PROJECT_DIR$/src/__data__/constants.js" />
-        <option value="$PROJECT_DIR$/src/pages/add-news-form/index.jsx" />
         <option value="$PROJECT_DIR$/src/pages/components/form/radio-group/index.jsx" />
         <option value="$PROJECT_DIR$/src/pages/components/form/radio-group/radio-button.jsx" />
+        <option value="$PROJECT_DIR$/src/pages/add-news-form/index.jsx" />
+        <option value="$PROJECT_DIR$/src/pages/add-news-form/home-select-input/index.jsx" />
       </list>
     </option>
   </component>
@@ -190,7 +172,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,6 +215,14 @@
               <item name="home-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="add-news-form" type="462c0819:PsiDirectoryNode" />
+              <item name="home-select-input" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="home-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="home-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -243,6 +232,15 @@
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="home-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="home-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="form" type="462c0819:PsiDirectoryNode" />
+              <item name="home-select-input" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="home-app" type="b2602c69:ProjectViewProjectNode" />
@@ -273,6 +271,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -452,12 +451,14 @@
       <workItem from="1586591249281" duration="1788000" />
       <workItem from="1586593053657" duration="923000" />
       <workItem from="1586599199477" duration="1652000" />
-      <workItem from="1586602702113" duration="1751000" />
+      <workItem from="1586602702113" duration="1791000" />
+      <workItem from="1586626349588" duration="774000" />
+      <workItem from="1586683085467" duration="1231000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153786000" />
+    <option name="totallyTimeSpent" value="155831000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -487,16 +488,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pages/residents-list/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1276">
-          <caret line="72" selection-start-line="72" selection-end-line="72" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/moderator/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -578,23 +569,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/components/form-fields/styles.css" />
-    <entry file="file://$PROJECT_DIR$/src/pages/components/form/home-select-input/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__data__/selectors.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="79" column="53" selection-start-line="79" selection-start-column="53" selection-end-line="79" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/components/form/text-input/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -756,16 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/__data__/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="90" column="41" selection-start-line="90" selection-start-column="41" selection-end-line="90" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/__data__/constants.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -773,13 +737,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/add-news-form/index.jsx">
+    <entry file="file://$PROJECT_DIR$/src/pages/components/form/radio-group/radio-button.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="161" column="42" selection-start-line="161" selection-start-column="34" selection-end-line="161" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="220">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -793,10 +754,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/components/form/radio-group/radio-button.jsx">
+    <entry file="file://$PROJECT_DIR$/src/pages/components/form/home-select-input/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+        <state relative-caret-position="110">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__data__/selectors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1523">
+          <caret line="74" column="34" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__data__/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-61">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/add-news-form/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/add-news-form/home-select-input/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>

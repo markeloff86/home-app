@@ -8,8 +8,7 @@ import classNames from 'classnames'
 import { getBuildingsList } from '../../__data__/actions'
 import { MODERATOR_STORAGE_NAME, NEWS_TYPES_LIST } from '../../__data__/constants'
 import { getToken } from '../../__data__/utils'
-
-import { TextInput, TextArea, HomeSelectInput, Checkbox, Action, RadioGroupMenu, SelectInput, RadioGroup } from '../components/form'
+import { TextInput, TextArea, Checkbox, Action, RadioGroupMenu, SelectInput, RadioGroup } from '../components/form'
 import formStyle from '../components/form/style.css'
 import {
     makeNewsBuildingsList,
@@ -20,6 +19,7 @@ import {
     makeContactFormData,
 } from "../../__data__/selectors"
 
+import HomeSelectInput from './home-select-input'
 import style from './style.css'
 
 function Component(props) {
@@ -46,11 +46,9 @@ function Component(props) {
                             name="homeNumber"
                             component={HomeSelectInput}
                             label="Дом"
-                            options={props.buildingsList}
                             size="md"
                             placeholder="H"
                             required
-                            makeRequest={false}
                         />
                     </div>
                     <div className={formStyle.checkboxGroup}>
@@ -122,18 +120,18 @@ function Component(props) {
                     </div>
 
 
-                    <div className={classNames(formStyle.fieldsSection, formStyle.hasBorder)}>
-                        <Field
-                            name="apartments"
-                            component={SelectInput}
-                            label=""
-                            options={props.buildingsList}
-                            size="xl"
-                            placeholder=""
-                            required
-                            isMulti={true}
-                        />
-                    </div>
+                    {/*<div className={classNames(formStyle.fieldsSection, formStyle.hasBorder)}>*/}
+                        {/*<Field*/}
+                            {/*name="apartments"*/}
+                            {/*component={SelectInput}*/}
+                            {/*label=""*/}
+                            {/*options={props.buildingsList}*/}
+                            {/*size="xl"*/}
+                            {/*placeholder=""*/}
+                            {/*required*/}
+                            {/*isMulti={true}*/}
+                        {/*/>*/}
+                    {/*</div>*/}
 
                     <div className={formStyle.delimiter} />
                     <div className={formStyle.fieldsSection}>
@@ -173,7 +171,6 @@ function Component(props) {
 }
 
 const mapStateToProps = createStructuredSelector({
-    buildingsList: makeNewsBuildingsList(),
     buildingFlats: makeBuildingFlats(),
     buildingPorches: makeBuildingPorches(),
     buildingPipes: makeBuildingPipes(),
