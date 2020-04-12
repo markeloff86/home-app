@@ -3,7 +3,6 @@ import React from 'react'
 import style from './radio-button.css'
 
 function Component(props) {
-    console.log(props)
     return (
         <div className={style.container}>
             <input

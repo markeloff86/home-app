@@ -95,3 +95,9 @@ export const makeNewsBuildingsList = () =>
         return ([ allBuildingsOption, someBuildingsOption, ...list ])
 
     })
+
+export const makeBuildingsList = () =>
+    createSelector(app, slice => {
+        const buildings = _.get(slice, 'buildings')
+        return _.map(buildings, item => ({ id: item.id, label: `${item.street}, ${item.number}` }))
+    })
