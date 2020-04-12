@@ -3,10 +3,12 @@ import ReactSelect from 'react-select'
 import classNames  from 'classnames'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
+import _ from 'lodash'
 
 import {createStructuredSelector} from "reselect"
 import { makeNewsBuildingsList } from "../../../__data__/selectors"
 import { getBuilding } from '../../../__data__/actions'
+import { NEWS_BUILDING_SELECT_ITEMS } from '../../../__data__/constants'
 
 import style from './style.css'
 
@@ -14,7 +16,9 @@ function Component(props) {
 
     const handleChange = e => {
         props.input.onChange(e)
-        // props.makeRequest && props.getBuilding(e.value)
+        if (!_.has(NEWS_BUILDING_SELECT_ITEMS, e.value)) {
+            props.getBuilding(e.value)
+        }
     }
 
     return (

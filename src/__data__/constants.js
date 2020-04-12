@@ -24,3 +24,8 @@ export const NEWS_TYPES_LIST = [
         label: 'Объявление',
     },
 ]
+
+export const NEWS_BUILDING_SELECT_ITEMS = {
+    all: 'all',
+    some: 'some',
+}

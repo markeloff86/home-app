@@ -2,6 +2,7 @@ import { createSelector } from 'reselect'
 import _ from 'lodash'
 
 import { declOfNum } from './utils'
+import { NEWS_BUILDING_SELECT_ITEMS } from './constants'
 
 const app = state => _.get(state, 'app', {})
 const form = state => _.get(state, 'form', {})
@@ -82,12 +83,12 @@ export const makeNewsBuildingsList = () =>
         const buildingText = declOfNum(buildingsId.length, ['дом', 'домам', 'домам'])
         const allBuildingsValue = `Всем ${buildingsId.length}${numberPrefix} ${buildingText}`
         const allBuildingsOption = {
-            value: 'all',
+            value: NEWS_BUILDING_SELECT_ITEMS.all,
             label: allBuildingsValue,
         }
 
         const someBuildingsOption = {
-            value: 'some',
+            value: NEWS_BUILDING_SELECT_ITEMS.some,
             label: 'Некоторым домам',
         }
 
