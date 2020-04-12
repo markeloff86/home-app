@@ -2,18 +2,16 @@ import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
 import { createStructuredSelector } from 'reselect'
-import {Field, reduxForm} from 'redux-form'
+import {Field, reduxForm, getFormValues} from 'redux-form'
 import classNames from 'classnames'
 import _ from 'lodash'
 
-import { getBuildingsList, sendResident } from '../../__data__/actions'
-import { MODERATOR_STORAGE_NAME } from '../../__data__/constants'
+import { getBuildingsList } from '../../__data__/actions'
+import { MODERATOR_STORAGE_NAME, NEWS_TYPES_LIST } from '../../__data__/constants'
 import { getToken } from '../../__data__/utils'
-
-import { TextInput, TextArea, HomeSelectInput, Checkbox, Action, RadioGroupMenu, SelectInput, RadioGroup } from '../components/form'
+import { TextInput, TextArea, Checkbox, Action, RadioGroupMenu, SelectInput, RadioGroup } from '../components/form'
 import formStyle from '../components/form/style.css'
 import {
-    makeNewsBuildingsList,
     makeBuildingFlats,
     makeBuildingPorches,
     makeBuildingPipes,
@@ -21,10 +19,13 @@ import {
     makeContactFormData,
 } from "../../__data__/selectors"
 
+import FormFactory from './form-factory'
+import HomeSelectInput from './home-select-input'
 import style from './style.css'
 
 function Component(props) {
     const token = getToken(MODERATOR_STORAGE_NAME)
+    const buildingSelectValue = _.get(props, 'formValues.homeNumber.value')
 
     useEffect(() => {
         props.getBuildingsList(token)
@@ -47,69 +48,12 @@ function Component(props) {
                             name="homeNumber"
                             component={HomeSelectInput}
                             label="Дом"
-                            options={props.buildingsList}
                             size="md"
                             placeholder="H"
                             required
-                            makeRequest={false}
                         />
                     </div>
-                    <div className={formStyle.checkboxGroup}>
-                        <Field
-                            name=""
-                            component={Checkbox}
-                            type="checkbox"
-                            label="Содержание"
-                            value=''
-                            placeholder=""
-                            id='checkbox1'
-                        />
-                        <Field
-                            name=""
-                            component={Checkbox}
-                            type="checkbox"
-                            label="Содержание"
-                            value=''
-                            placeholder=""
-                            id='checkbox2'
-                        />
-                        <Field
-                            name=""
-                            component={Checkbox}
-                            type="checkbox"
-                            label="Содержание"
-                            value=''
-                            placeholder=""
-                            id='checkbox3'
-                        />
-                        <Field
-                            name=""
-                            component={Checkbox}
-                            type="checkbox"
-                            label="Содержание"
-                            value=''
-                            placeholder=""
-                            id='checkbox4'
-                        />
-                        <Field
-                            name=""
-                            component={Checkbox}
-                            type="checkbox"
-                            label="Содержание"
-                            value=''
-                            placeholder=""
-                            id='checkbox5'
-                        />
-                        <Field
-                            name=""
-                            component={Checkbox}
-                            type="checkbox"
-                            label="Содержание"
-                            value=''
-                            placeholder=""
-                            id='checkbox6'
-                        />
-                    </div>
+                    <FormFactory buildingValue={buildingSelectValue} />
 
                     <div className={formStyle.fieldsSection}>
                         <Field
@@ -121,32 +65,6 @@ function Component(props) {
                             placeholder=""
                         />
                     </div>
-
-
-                    <div className={classNames(formStyle.fieldsSection, formStyle.hasBorder)}>
-                        <Field
-                            name="apartments"
-                            component={SelectInput}
-                            label=""
-                            options={props.buildingsList}
-                            size="xl"
-                            placeholder=""
-                            required
-                            isMulti={true}
-                        />
-                    </div>
-
-                    <div className={formStyle.fieldsSection}>
-                        <Field
-                            name="test"
-                            component={RadioGroup}
-                            type="radio"
-                            label="Radio group"
-                            value=''
-                            placeholder=""
-                        />
-                    </div>
-
 
                     <div className={formStyle.delimiter} />
                     <div className={formStyle.fieldsSection}>
@@ -162,12 +80,18 @@ function Component(props) {
                     </div>
                     <div className={formStyle.fieldsSection}>
                         <Field
-                            name="newsTitle"
+                            name="newsDescription"
                             component={TextArea}
                             type="text"
                             label="Содержание"
                             value=''
                             placeholder=""
+                        />
+                    </div>
+                    <div className={formStyle.fieldsSection}>
+                        <RadioGroup
+                            name="newsType"
+                            items={NEWS_TYPES_LIST}
                         />
                     </div>
                     <div className={formStyle.actions}>
@@ -180,17 +104,16 @@ function Component(props) {
 }
 
 const mapStateToProps = createStructuredSelector({
-    buildingsList: makeNewsBuildingsList(),
     buildingFlats: makeBuildingFlats(),
     buildingPorches: makeBuildingPorches(),
     buildingPipes: makeBuildingPipes(),
     buildingFloorCount: makeBuildingFloorCount(),
     contactFormData: makeContactFormData(),
+    formValues: getFormValues('AddNewsForm'),
 })
 
 const mapDispatchToProps = {
     getBuildingsList,
-    sendResident,
 }
 
 const withConnect = connect(

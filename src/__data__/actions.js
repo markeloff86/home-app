@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-import { MODERATOR_STORAGE_NAME } from './constants'
+import { MODERATOR_STORAGE_NAME, SERVICE_URL } from './constants'
 import { getToken } from './utils'
 
 import * as types from './actions-types'
@@ -30,7 +30,7 @@ export const getResidentsList = buildingsId => dispatch => {
             'authorization': `Token ${getToken(MODERATOR_STORAGE_NAME)}`,
             'Content-Type': 'application/json',
         },
-        url: `http://89.223.30.70:8000/api/residents?buildings_id=${buildingsId}`,
+        url: `${SERVICE_URL}/api/residents?buildings_id=${buildingsId}`,
     })
         .then(response => {
             dispatch(fetchGetResidentsListSuccess(response.data))
@@ -49,7 +49,7 @@ export const getBuildingsList = token => dispatch => {
             'authorization': `Token ${token}`,
             'Content-Type': 'application/json',
         },
-        url: `http://89.223.30.70:8000/api/buildings`,
+        url: `${SERVICE_URL}/api/buildings`,
     })
         .then(response => {
             dispatch(fetchGetBuildingsListSuccess(response.data))
@@ -68,7 +68,7 @@ export const getBuilding = id => dispatch => {
             'authorization': `Token ${getToken(MODERATOR_STORAGE_NAME)}`,
             'Content-Type': 'application/json',
         },
-        url: `http://89.223.30.70:8000/api/buildings/${id}`,
+        url: `${SERVICE_URL}/api/buildings/${id}`,
     })
         .then(response => {
             dispatch(fetchGetBuildingSuccess(response.data))
@@ -88,7 +88,7 @@ export const sendResident = data => dispatch => {
             'Content-Type': 'application/json',
         },
         data,
-        url: 'http://89.223.30.70:8000/api/signup/',
+        url: `${SERVICE_URL}/api/signup/`,
     })
         .then(response => {
             dispatch(fetchSendResidentSuccess(response.data))
