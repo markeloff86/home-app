@@ -55,16 +55,6 @@ function Component(props) {
                     </div>
                     <FormFactory buildingValue={buildingSelectValue} />
 
-                    <div className={formStyle.fieldsSection}>
-                        <Field
-                            name="test"
-                            component={RadioGroupMenu}
-                            type="radio"
-                            label="Radio group"
-                            value=''
-                            placeholder=""
-                        />
-                    </div>
 
                     <div className={formStyle.delimiter} />
                     <div className={formStyle.fieldsSection}>
