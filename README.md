@@ -69,5 +69,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 
 ### Docker-compose (home_app_ui + nginx)
-1. docker-compose build
-2. docker-compose up -d
+docker-compose up -d
