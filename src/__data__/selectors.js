@@ -75,6 +75,22 @@ export const makeNewsFloorSelectItems = () =>
         ]
     })
 
+export const makeNewsPorchesSelectItems = () =>
+    createSelector(app, slice => {
+        const porchesCount = _.get(slice, 'building.porches', [])
+        const porchesText = declOfNum(porchesCount.length, ['подъезд', 'подъезда', 'подъездов'])
+        return [
+            {
+                value: 'all',
+                label: `Все ${porchesCount.length} ${porchesText}`,
+            },
+            {
+                value: 'some',
+                label: 'Некоторые подъезды',
+            },
+        ]
+    })
+
 export const makeContactFormData = () =>
     createSelector(form, slice => {
         const values = _.get(slice, 'AddContactForm.values')

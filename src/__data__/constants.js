@@ -35,7 +35,7 @@ export const NEWS_BUILDING_MENU_ITEMS_ID = {
     apartments: 'apartments',
     porches: 'porches',
     floors: 'floors',
-    risers: 'risers',
+    pipes: 'pipes',
 }
 
 export const NEWS_BUILDING_MENU_ITEMS = [
@@ -56,7 +56,7 @@ export const NEWS_BUILDING_MENU_ITEMS = [
         label: 'Этажи',
     },
     {
-        id: NEWS_BUILDING_MENU_ITEMS_ID.risers,
+        id: NEWS_BUILDING_MENU_ITEMS_ID.pipes,
         label: 'Стояки',
     },
 ]
