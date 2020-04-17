@@ -9,14 +9,9 @@ import BuildingFields from './building-fields'
  * @return {null}
  */
 function Component(props) {
-    switch(props.buildingValue) {
-        case NEWS_BUILDING_SELECT_ITEMS.all:
-            return null
-        case NEWS_BUILDING_SELECT_ITEMS.some:
-            return <SomeBuildingFields />
-        default:
-            return <BuildingFields />
-    }
+    if (!props.buildingValue || props.buildingValue === NEWS_BUILDING_SELECT_ITEMS.all) return null
+    if (props.buildingValue === NEWS_BUILDING_SELECT_ITEMS.some) return <SomeBuildingFields />
+    return <BuildingFields />
 }
 
 export default Component

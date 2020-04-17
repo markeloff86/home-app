@@ -29,3 +29,34 @@ export const NEWS_BUILDING_SELECT_ITEMS = {
     all: 'all',
     some: 'some',
 }
+
+export const NEWS_BUILDING_MENU_ITEMS_ID = {
+    home: 'home',
+    apartments: 'apartments',
+    porches: 'porches',
+    floors: 'floors',
+    risers: 'risers',
+}
+
+export const NEWS_BUILDING_MENU_ITEMS = [
+    {
+        id: NEWS_BUILDING_MENU_ITEMS_ID.home,
+        label: 'На весь дом',
+    },
+    {
+        id: NEWS_BUILDING_MENU_ITEMS_ID.apartments,
+        label: 'Квартиры',
+    },
+    {
+        id: NEWS_BUILDING_MENU_ITEMS_ID.porches,
+        label: 'Подъезды',
+    },
+    {
+        id: NEWS_BUILDING_MENU_ITEMS_ID.floors,
+        label: 'Этажи',
+    },
+    {
+        id: NEWS_BUILDING_MENU_ITEMS_ID.risers,
+        label: 'Стояки',
+    },
+]

@@ -1,12 +1,13 @@
 .container {
     display: flex;
-    height: 18px;
     align-items: center;
+    height: 18px;
 }
 
 .field {
     height: 0;
     width: 0;
+    margin: 0;
 }
 
 .field:before {
@@ -17,6 +18,7 @@
     background-image: url("./images/checkbox_off.svg");
     margin-top: -8px;
     border: none;
+    cursor: pointer;
 }
 
 .field:checked:before {
@@ -31,11 +33,12 @@
 
 }
 
-
 .label {
     font-size: 14px;
     font-weight: 600;
     font-stretch: normal;
     color: #000;
-    margin-left: 22px;
+    margin-left: 28px;
+    margin-top: 3px;
+    cursor: pointer;
 }

@@ -59,6 +59,22 @@ export const makeBuildingFloorCount = () =>
         return _.map(new Array(floorsCount), (item, key) => ({ value: key + 1, label: key + 1 }))
     })
 
+export const makeNewsFloorSelectItems = () =>
+    createSelector(app, slice => {
+        const floorsCount = _.get(slice, 'building.floor_count')
+        const floorText = declOfNum(floorsCount, ['этаж', 'этажа', 'этажей'])
+        return [
+            {
+                value: 'all',
+                label: `Все ${floorsCount} ${floorText}`,
+            },
+            {
+                value: 'some',
+                label: 'Некоторые этажи',
+            },
+        ]
+    })
+
 export const makeContactFormData = () =>
     createSelector(form, slice => {
         const values = _.get(slice, 'AddContactForm.values')
