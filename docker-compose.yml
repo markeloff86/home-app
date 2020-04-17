@@ -1,0 +1,6 @@
+version: "3.4"
+services:
+  ui:
+    image: index.docker.io/timonin/domcom_web:latest
+    ports:
+      - "80:80"
