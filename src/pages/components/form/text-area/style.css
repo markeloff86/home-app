@@ -51,3 +51,13 @@
     width: 480px;
     height: 120px;
 }
+
+.errorMessage {
+    font-size: 12px;
+    font-weight: 600;
+    color: #e50000;
+}
+
+.invalid {
+    border: solid 2px #e50000;
+}

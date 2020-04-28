@@ -2,14 +2,15 @@ import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
 import { createStructuredSelector } from 'reselect'
-import {Field, reduxForm, getFormValues} from 'redux-form'
+import { Field, FieldArray, reduxForm, getFormValues, submit } from 'redux-form'
 import classNames from 'classnames'
 import _ from 'lodash'
 
 import { getBuildingsList } from '../../__data__/actions'
 import { MODERATOR_STORAGE_NAME, NEWS_TYPES_LIST } from '../../__data__/constants'
 import { getToken } from '../../__data__/utils'
-import { TextInput, TextArea, Checkbox, Action, RadioGroupMenu, SelectInput, RadioGroup } from '../components/form'
+import { TextInput, TextArea, Action, RadioGroup } from '../components/form'
+import { required } from '../components/form/validation'
 import formStyle from '../components/form/style.css'
 import {
     makeBuildingFlats,
@@ -66,6 +67,7 @@ function Component(props) {
                             value=''
                             placeholder=""
                             size='xlg'
+                            validate={[ required ]}
                         />
                     </div>
                     <div className={formStyle.fieldsSection}>
@@ -76,14 +78,24 @@ function Component(props) {
                             label="Содержание"
                             value=''
                             placeholder=""
+                            validate={[ required ]}
                         />
                     </div>
                     <div className={formStyle.fieldsSection}>
                         <RadioGroup
+                            childName="newsTypeItem"
                             name="newsType"
                             items={NEWS_TYPES_LIST}
+                            validate={[ required ]}
                         />
                     </div>
+                    {/*<FieldArray*/}
+                        {/*childName="newsTypeItem"*/}
+                        {/*name="newsType"*/}
+                        {/*items={NEWS_TYPES_LIST}*/}
+                        {/*validate={[ required ]}*/}
+                        {/*component={RadioGroup} */}
+                    {/*/>*/}
                     <div className={formStyle.actions}>
                         <Action type="submit" text="Отправить объявление" />
                     </div>
