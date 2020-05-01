@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
 import { createStructuredSelector } from 'reselect'
-import { Field, FieldArray, reduxForm, getFormValues, submit } from 'redux-form'
+import { Field, reduxForm, getFormValues } from 'redux-form'
 import classNames from 'classnames'
 import _ from 'lodash'
 
@@ -22,6 +22,7 @@ import {
 
 import FormFactory from './form-factory'
 import HomeSelectInput from './home-select-input'
+import submit from './submit'
 import style from './style.css'
 
 function Component(props) {
@@ -32,10 +33,6 @@ function Component(props) {
         props.getBuildingsList(token)
     }, [token])
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-    }
-
     return (
         <div className={formStyle.container}>
             <header className={formStyle.header}>
@@ -43,7 +40,7 @@ function Component(props) {
             </header>
             <div className={formStyle.content}>
                 <h1 className={formStyle.title}>Укажите кому и о чем хотите рассказать</h1>
-                <form onSubmit={handleSubmit} className={style.form}>
+                <form className={style.form}>
                     <div className={classNames(formStyle.fieldsSection, formStyle.hasBorder)}>
                         <Field
                             name="homeNumber"
@@ -51,7 +48,7 @@ function Component(props) {
                             label="Дом"
                             size="md"
                             placeholder="H"
-                            required
+                            validate={[ required ]}
                         />
                     </div>
                     <FormFactory buildingValue={buildingSelectValue} />
@@ -89,17 +86,10 @@ function Component(props) {
                             validate={[ required ]}
                         />
                     </div>
-                    {/*<FieldArray*/}
-                        {/*childName="newsTypeItem"*/}
-                        {/*name="newsType"*/}
-                        {/*items={NEWS_TYPES_LIST}*/}
-                        {/*validate={[ required ]}*/}
-                        {/*component={RadioGroup} */}
-                    {/*/>*/}
-                    <div className={formStyle.actions}>
-                        <Action type="submit" text="Отправить объявление" />
-                    </div>
                 </form>
+                <div className={formStyle.actions}>
+                    <Action type="button" text="Отправить объявление" />
+                </div>
             </div>
         </div>
     )
@@ -123,8 +113,9 @@ const withConnect = connect(
     mapDispatchToProps,
 )
 
-Component = reduxForm ({
+Component = reduxForm({
     form: 'AddNewsForm',
+    onSubmit: submit
 }) (Component)
 
 export default compose(withConnect)(Component)

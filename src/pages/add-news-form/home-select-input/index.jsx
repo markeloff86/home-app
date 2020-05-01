@@ -13,6 +13,7 @@ import { NEWS_BUILDING_SELECT_ITEMS } from '../../../__data__/constants'
 import style from './style.css'
 
 function Component(props) {
+    const isInvalid = props.meta.invalid && props.meta.visited
 
     const handleChange = e => {
         props.input.onChange(e)
@@ -22,15 +23,18 @@ function Component(props) {
     }
 
     return (
-        <div className={style.container}>
-            <ReactSelect
-                {...props}
-                value={props.selectedOption}
-                onChange={handleChange}
-                options={props.buildingsList}
-                className={classNames(style.field, style[`size-${props.size}`])}
-            />
-            <label className={style.label}>{props.label}</label>
+        <div className={style.wrapper}>
+            <div className={style.container}>
+                <ReactSelect
+                    {...props}
+                    value={props.selectedOption}
+                    onChange={handleChange}
+                    options={props.buildingsList}
+                    className={classNames(style.field, style[`size-${props.size}`])}
+                />
+                <label className={style.label}>{props.label}</label>
+            </div>
+            {isInvalid && <div className={style.errorMessage}>{props.meta.error}</div>}
         </div>
     )
 }
