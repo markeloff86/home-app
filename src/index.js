@@ -1,5 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import 'react-widgets/dist/css/react-widgets.css'
+
+import './theme/react-widgets/styles/react-widgets.css'
 import './theme/index.css'
 import './theme/opensans/opensans.css'
 import './theme/glyphter-font/css/Glyphter.css'
