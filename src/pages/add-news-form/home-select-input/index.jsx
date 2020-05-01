@@ -1,9 +1,9 @@
 import React from 'react'
-import ReactSelect from 'react-select'
 import classNames  from 'classnames'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
 import _ from 'lodash'
+import DropdownList from 'react-widgets/lib/DropdownList'
 
 import {createStructuredSelector} from "reselect"
 import { makeNewsBuildingsList } from "../../../__data__/selectors"
@@ -13,6 +13,7 @@ import { NEWS_BUILDING_SELECT_ITEMS } from '../../../__data__/constants'
 import style from './style.css'
 
 function Component(props) {
+    const { input, data, valueField, textField } = props
     const isInvalid = props.meta.invalid && props.meta.visited
 
     const handleChange = e => {
@@ -25,11 +26,13 @@ function Component(props) {
     return (
         <div className={style.wrapper}>
             <div className={style.container}>
-                <ReactSelect
-                    {...props}
-                    value={props.selectedOption}
+                <DropdownList
+                    filter
+                    value={props.input.value}
+                    textField='label'
+                    valueField='value'
                     onChange={handleChange}
-                    options={props.buildingsList}
+                    data={props.buildingsList}
                     className={classNames(style.field, style[`size-${props.size}`])}
                 />
                 <label className={style.label}>{props.label}</label>

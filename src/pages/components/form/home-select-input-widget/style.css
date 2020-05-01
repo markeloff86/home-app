@@ -5,6 +5,35 @@
     font-family: Glyphter, Open Sans;
 }
 
+.field > div:nth-child(2) {
+    box-shadow: none;
+    border: solid 2px #000;
+}
+
+.field > div:first-child {
+    border: solid 1px #777a82;
+}
+
+.field > div:first-child,
+.field > div:nth-child(2) {
+    border-radius: 2px;
+    font-size: 14px;
+    height: auto;
+    min-height: 32px;
+    flex-wrap: unset;
+    box-sizing: border-box;
+}
+
+.field > div:first-child span,
+.field > div:nth-child(2) span {
+    display: none;
+}
+
+.field > div:first-child span + div ,
+.field > div:nth-child(2) span + div  {
+    padding: 5px 8px;
+}
+
 .label {
     display: block;
     font-size: 12px;

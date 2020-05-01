@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60d3a572-374b-4320-9bd8-19c1e7c1e5d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/theme/react-widgets/styles/react-widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/react-widgets/styles/react-widgets.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__data__/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__data__/selectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/add-news-form/home-select-input/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/add-news-form/home-select-input/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/add-news-form/home-select-input/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/add-news-form/home-select-input/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/add-news-form/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/add-news-form/index.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,35 +22,54 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/add-news-form/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+            <state relative-caret-position="462">
+              <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/theme/react-widgets/styles/react-widgets.css">
+        <entry file="file://$PROJECT_DIR$/src/pages/add-news-form/home-select-input/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="978" column="8" selection-start-line="978" selection-start-column="8" selection-end-line="978" selection-end-column="8" />
+            <state relative-caret-position="308">
+              <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/react-widgets/dist/css/react-widgets.css">
+        <entry file="file://$PROJECT_DIR$/src/pages/add-news-form/home-select-input/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1997" selection-start-column="1997" selection-end-column="1997" />
+            <state relative-caret-position="110">
+              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/__data__/selectors.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="126" column="66" lean-forward="true" selection-start-line="126" selection-start-column="66" selection-end-line="126" selection-end-column="66" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+                <marker date="1588349686619" expanded="true" signature="2243:2719" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/__data__/constants.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -55,8 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sendResident</find>
-      <find>SERVICE_URL</find>
       <find>${SERVICE_URL}</find>
       <find>http://89.223.30.70:8000</find>
       <find>RadioGroup</find>
@@ -85,6 +106,8 @@
       <find>submit</find>
       <find>rw-multiselect</find>
       <find>.rw-btn-select:hover</find>
+      <find>list</find>
+      <find>propTypes</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -115,7 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pages/moderator/components/loader/style.css" />
         <option value="$PROJECT_DIR$/src/pages/moderator/style.css" />
         <option value="$PROJECT_DIR$/src/store.js" />
         <option value="$PROJECT_DIR$/src/pages/moderator/index.jsx" />
@@ -149,7 +171,6 @@
         <option value="$PROJECT_DIR$/src/pages/add-news-form/form-factory/index.jsx" />
         <option value="$PROJECT_DIR$/src/pages/components/form/radio-group/radio-button.css" />
         <option value="$PROJECT_DIR$/src/pages/components/form/checkbox/style.css" />
-        <option value="$PROJECT_DIR$/src/__data__/selectors.js" />
         <option value="$PROJECT_DIR$/src/__data__/constants.js" />
         <option value="$PROJECT_DIR$/src/pages/add-news-form/form-factory/building-fields/index.jsx" />
         <option value="$PROJECT_DIR$/src/pages/components/form/text-input/style.css" />
@@ -161,11 +182,13 @@
         <option value="$PROJECT_DIR$/src/pages/add-news-form/submit-button.jsx" />
         <option value="$PROJECT_DIR$/src/pages/components/form/form-action/index.jsx" />
         <option value="$PROJECT_DIR$/src/pages/add-news-form/submit.js" />
-        <option value="$PROJECT_DIR$/src/pages/add-news-form/home-select-input/index.jsx" />
-        <option value="$PROJECT_DIR$/src/pages/add-news-form/index.jsx" />
         <option value="$PROJECT_DIR$/src/theme/react-widgets.css" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/theme/react-widgets/styles/react-widgets.css" />
+        <option value="$PROJECT_DIR$/src/pages/add-news-form/index.jsx" />
+        <option value="$PROJECT_DIR$/src/pages/add-news-form/home-select-input/style.css" />
+        <option value="$PROJECT_DIR$/src/__data__/selectors.js" />
+        <option value="$PROJECT_DIR$/src/pages/add-news-form/home-select-input/index.jsx" />
       </list>
     </option>
   </component>
@@ -238,6 +261,12 @@
               <item name="home-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="home-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="__data__" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="home-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="home-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -246,6 +275,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="add-news-form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="home-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="home-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="add-news-form" type="462c0819:PsiDirectoryNode" />
+              <item name="home-select-input" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="home-app" type="b2602c69:ProjectViewProjectNode" />
@@ -489,12 +526,15 @@
       <workItem from="1588315271937" duration="606000" />
       <workItem from="1588334334459" duration="1789000" />
       <workItem from="1588336143427" duration="1160000" />
-      <workItem from="1588342160762" duration="1482000" />
+      <workItem from="1588342160762" duration="1790000" />
+      <workItem from="1588343968904" duration="1790000" />
+      <workItem from="1588345777475" duration="400000" />
+      <workItem from="1588348191145" duration="1484000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188204000" />
+    <option name="totallyTimeSpent" value="192186000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -512,8 +552,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49438202" visible="true" weight="0.045588236" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.505618" side_tool="true" visible="true" weight="0.045588236" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49239922" visible="true" weight="0.045588236" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5076008" side_tool="true" visible="true" weight="0.045588236" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -524,23 +564,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pages/moderator/components/loader/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/redux-form/lib/ConnectedFields.types.js.flow">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/__data__/actions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="71">
@@ -690,24 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/__data__/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1276">
-          <caret line="58" column="45" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__data__/selectors.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="49" column="30" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <marker date="1587112293080" expanded="true" signature="2243:2719" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/redux-form/es/FieldArray.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -811,16 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/add-news-form/home-select-input/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" column="59" lean-forward="true" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-widgets/lib/scss/multiselect.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1606">
@@ -852,27 +847,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/theme/react-widgets.css" />
     <entry file="file://$PROJECT_DIR$/src/theme/react-widgets/react-widgets.css" />
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/add-news-form/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-widgets/lib/Multiselect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="785" selection-start-line="785" selection-end-line="785" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-widgets/dist/css/react-widgets.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -884,6 +858,66 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="978" column="8" selection-start-line="978" selection-start-column="8" selection-end-line="978" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/add-news-form/home-select-input-widget/index.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/pages/add-news-form/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/add-news-form/home-select-input/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-widgets/lib/Multiselect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="785" selection-start-line="785" selection-end-line="785" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__data__/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__data__/selectors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="126" column="66" lean-forward="true" selection-start-line="126" selection-start-column="66" selection-end-line="126" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <marker date="1588349686619" expanded="true" signature="2243:2719" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/add-news-form/home-select-input/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

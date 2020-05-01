@@ -5,7 +5,6 @@ import { createStructuredSelector } from 'reselect'
 import { Field, reduxForm, getFormValues } from 'redux-form'
 import classNames from 'classnames'
 import _ from 'lodash'
-import Multiselect from 'react-widgets/lib/Multiselect'
 
 import { getBuildingsList } from '../../__data__/actions'
 import { MODERATOR_STORAGE_NAME, NEWS_TYPES_LIST } from '../../__data__/constants'
@@ -42,7 +41,6 @@ function Component(props) {
             <div className={formStyle.content}>
                 <h1 className={formStyle.title}>Укажите кому и о чем хотите рассказать</h1>
                 <form className={style.form}>
-                    <Multiselect />
                     <div className={classNames(formStyle.fieldsSection, formStyle.hasBorder)}>
                         <Field
                             name="homeNumber"

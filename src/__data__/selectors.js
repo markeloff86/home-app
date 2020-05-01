@@ -127,6 +127,21 @@ export const makeNewsBuildingsList = () =>
         return ([ allBuildingsOption, someBuildingsOption, ...list ])
 
     })
+//
+// export const makeNewsBuildingsList = () =>
+//     createSelector(app, slice => {
+//         const buildings = _.get(slice, 'buildings')
+//         const list = _.map(buildings, item => `H ${item.street}, ${item.number}`)
+//
+//         const buildingsId = _.map(list, i => i.value)
+//         const numberPrefix = declOfNum(buildingsId.length, ['-му', '-ум', '-ти'])
+//         const buildingText = declOfNum(buildingsId.length, ['дом', 'домам', 'домам'])
+//         const allBuildingsValue = `H Всем ${buildingsId.length}${numberPrefix} ${buildingText}`
+//
+//         const someBuildingsValue = 'H Некоторым домам'
+//
+//         return ([ allBuildingsValue, someBuildingsValue, ...list ])
+//     })
 
 export const makeBuildingsList = () =>
     createSelector(app, slice => {
