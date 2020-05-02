@@ -6,6 +6,10 @@ import { getStatus, formatPhoneNumber } from './utils'
 import style from './style.css'
 
 function Component(props) {
+    if(_.isEmpty(props.residentsList)) return (
+        <div>Ща, пару сек</div>
+    )
+
     return (
         <div className={style.container}>
             <div className={style.head}>
@@ -27,7 +31,7 @@ function Component(props) {
                     }</div>
                     <div className={style.flatNumber}>{resident['flat']['number']}</div>
                     <div className={style.porch}>{resident['flat']['porch']['number']}</div>
-                    <div className={style.floor}>{resident['flat']['floor']}</div>
+                    <div className={style.floor}>{resident['flat']['floor']['number']}</div>
                     <div className={style.floor}>{resident['flat']['pipe']['name']}</div>
                     <div className={style.statusWrapper}>
                         <div className={style.status}>{getStatus(resident['status'])}</div>
