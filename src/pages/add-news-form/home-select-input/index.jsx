@@ -13,11 +13,11 @@ import { NEWS_BUILDING_SELECT_ITEMS } from '../../../__data__/constants'
 import style from './style.css'
 
 function Component(props) {
-    const { input, data, valueField, textField } = props
-    const isInvalid = props.meta.invalid && props.meta.visited
+    const { input, meta, buildingsList } = props
+    const isInvalid = meta.invalid && meta.visited
 
     const handleChange = e => {
-        props.input.onChange(e)
+        input.onChange(e)
         if (!_.has(NEWS_BUILDING_SELECT_ITEMS, e.value)) {
             props.getBuilding(e.value)
         }
@@ -27,13 +27,18 @@ function Component(props) {
         <div className={style.wrapper}>
             <div className={style.container}>
                 <DropdownList
+                    {...input}
                     filter
-                    value={props.input.value}
                     textField='label'
                     valueField='value'
                     onChange={handleChange}
-                    data={props.buildingsList}
-                    className={classNames(style.field, style[`size-${props.size}`])}
+                    data={buildingsList}
+                    className={classNames(
+                        style.field,
+                        style[`size-${props.size}`],
+                        isInvalid && style.invalid,
+                        meta.active && style.active,
+                    )}
                 />
                 <label className={style.label}>{props.label}</label>
             </div>
