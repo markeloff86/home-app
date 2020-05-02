@@ -8,6 +8,7 @@ import classNames from "classnames"
 
 import { Checkbox, RadioGroupMenu, RadioGroup } from '../../../components/form'
 import formStyle from '../../../components/form/style.css'
+import { required } from '../../../components/form/validation'
 import {
     makeBuildingFlats,
     makeBuildingsList,
@@ -18,7 +19,7 @@ import {
     makeBuildingPipes,
 } from "../../../../__data__/selectors"
 import { NEWS_BUILDING_MENU_ITEMS, NEWS_BUILDING_MENU_ITEMS_ID } from "../../../../__data__/constants"
-import SelectInput from "../../../components/form/select-input"
+import MultiSelectInput from "../../../components/form/multi-select-input"
 
 function Component(props) {
     const buildingSelectValue = _.get(props, 'formValues.buildingFieldsMenuField')
@@ -32,14 +33,11 @@ function Component(props) {
             <div className={classNames(formStyle.fieldsSection, formStyle.hasBorder)}>
                 <Field
                     name="flatsNumbers"
-                    component={SelectInput}
-                    type="text"
+                    component={MultiSelectInput}
                     label="Квартира"
                     size="xl"
                     options={props.buildingFlats}
-                    placeholder=""
-                    required
-                    isMulti={true}
+                    validate={[ required ]}
                 />
             </div>
             }

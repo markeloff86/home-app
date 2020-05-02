@@ -148,3 +148,8 @@ export const makeBuildingsList = () =>
         const buildings = _.get(slice, 'buildings')
         return _.map(buildings, item => ({ id: item.id, label: `${item.street}, ${item.number}` }))
     })
+
+export const makeSomeBuildindsFieldsValies = () =>
+    createSelector(form, slice => {
+        return _.get(slice, 'AddNewsForm.values.someBuildingsFields')
+    })

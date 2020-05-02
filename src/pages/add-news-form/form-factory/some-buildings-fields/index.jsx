@@ -7,10 +7,10 @@ import _ from 'lodash'
 
 import { Checkbox } from '../../../components/form'
 import formStyle from '../../../components/form/style.css'
-import { makeBuildingsList } from "../../../../__data__/selectors"
+import { makeBuildingsList, makeSomeBuildindsFieldsValies } from "../../../../__data__/selectors"
 
 function Component(props) {
-
+    console.log('values', props.values)
     return (
         <div className={formStyle.checkboxGroup}>
             {_.map(props.buildingsList, building => (
@@ -27,14 +27,16 @@ function Component(props) {
     )
 }
 
+// TODO: Перенести проверку на одно заполненное поле в сабмит формы, а тут вывести сообщение о необходимости заполнить.
+
 const mapStateToProps = createStructuredSelector({
     buildingsList: makeBuildingsList(),
+    values: makeSomeBuildindsFieldsValies(),
 })
 
 
 const withConnect = connect(
     mapStateToProps,
-
 )
 
 export default compose(withConnect)(Component)

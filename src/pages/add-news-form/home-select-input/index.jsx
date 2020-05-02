@@ -27,7 +27,9 @@ function Component(props) {
         <div className={style.wrapper}>
             <div className={style.container}>
                 <DropdownList
-                    {...input}
+                    value={input.value}
+                    onBlur={input.onBlur}
+                    onFocus={input.onFocus}
                     filter
                     textField='label'
                     valueField='value'

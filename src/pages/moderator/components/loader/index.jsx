@@ -8,7 +8,7 @@ function Component() {
         <div className={style.container}>
             <div className={style.loaderWrapper}>
                 <img className={style.image} src={Image} alt="" />
-                <div className={style.text}>Еще чуть-чуть, Иван!</div>
+                <div className={style.text}>Еще чуть-чуть, Димас!</div>
             </div>
         </div>
     )
